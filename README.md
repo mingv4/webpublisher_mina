@@ -4,7 +4,7 @@
 
 ---
 
-## markdown 사용법 정리하기
+## markdown 사용법 정리d하기
 
 [마크다운내용](./a_assest/a_markdown.md)
 
@@ -35,3 +35,4 @@
 
 
 
+​                          dd
