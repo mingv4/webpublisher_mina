@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>첫번째 웹 문서 만들기</title>
+    <style>
+      body { background-color:#247192; }
+      p { background-color: purple ; color: white; }
+      .p_text { font-size: 2rem; }
+      .p_texttext { font-size: 4rem; }
+
+      div { width:140px; height:200px; background-color:salmon; margin-bottom:5px; } 
+      #box { border-radius: 40px; }
+      .one { color; #fac;}
+      .two { text-decoration:underline; }
+      .three { text-shadow: 0.1rem 0.1rem 0.1rem rgba(0,0,0,0.5); }
+      .and:hover{ color:#fff; }
+
+      #mm { border-radius: 50px; }
+    </style>
+
+  </head>
+  <body>
+    <h1 class = "box one two three and">웹문서 처음으로 만들어보기!</h1>
+    <p class="p_text">
+      웹문서를 처음으로 만들어 보았다.<br/>
+      ..................? 의자가 불편하다. 허리가 아프구나
+    </p>
+    <p class="p_texttext">
+      집에가고싶다
+    </p>
+    <p></p>
+      <div id="box"></div>
+<p>    </p>
+    <div id="mm"></div>
+    <div></div>
+<!-- 설명, 내용, 누군가에게 지시, 작성날짜,.......... -->
+
+  <script>
+    var myP = document.getElementsByTagName('p')[0];
+    myP.addEventListener( 'click', function( ){
+    if( myP.style.backgroundColor === "rgb(0, 0, 0)" ){
+        myP.style.backgroundColor = "#f00";
+        }else{
+         myP.style.backgroundColor = "#000";
+        }
+     } );
+     
+
+    var myP1 = document.getElementsByTagName('p')[1];
+    myP1.addEventListener( 'click', function( ){ if( myP1.style.backgroundColor === "rgb(0, 0, 0)" ){
+        myP1.style.backgroundColor = "#f00";
+        }else{
+         myP1.style.backgroundColor = "#000";
+        }
+     } );
+
+  </script>
+  </body>
+</html>
