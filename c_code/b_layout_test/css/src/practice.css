@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* practice.css*/
+
+
+#wrap{margin:auto; width: 1600px;height: 5020px; background-color: #e2e2e2;}
+
+
+
+body{margin:0;}
+
+
+
+#headBox{width: 1600px; height: 150px; background-color: #cccccc;}
+
+.head_content{margin:auto; float:left; margin-top:34px; margin-left: 50px;  width: 1500px;height: 80px;}
+
+h1{margin:0; float:left; width: 250px; height:80px; background-color: rgb(17, 162, 219);}
+ /* text-align: center; line-height: 80px;} 가운데 정렬 */
+.hb_01{float:left; width: 850px; height:80px; background-color: rgb(17, 162, 219); margin-left: 75px;}
+
+.hb_01:after,.hb_01::after{content:" "; display:block; clear:both;}
+
+   .hb_01 ul{margin:0; margin-left:10px; margin-top:5px;   padding:0; width: 830px; height: 70px; list-style: none;}
+
+   .hb_01 ul li{float:left; margin-right:20px; 
+     width: 150px; height: 70px;background-color: rgb(255, 240, 158);}
+
+   .hb_01 ul li:last-child{margin-right:0;}
+
+.hb_02{float:left; width: 250px; height:80px; background-color: rgb(17, 162, 219); margin-left: 75px;}
+
+
+
+
+
+#adViewBox{width: 1600px; height: 750px; background-color: #aaaaaa;}
+
+.view_outer{margin:auto; margin-top:28px; margin-bottom: 28px;width: 1300px; height: 600px;background-color: rgb(17, 162, 219);}
+
+.view_indicator{margin:auto; margin-bottom: 28px;padding:10px; box-sizing:border-box; width: 850px; height: 60px;background-color: rgb(17, 162, 219);}
+.view_indicator:after,.view_indicator::after{content:" "; display:block; clear:both;}
+
+   .view_indicator ul{margin:0; margin-left:5px; padding:0; width:830px; height:40px; list-style: none;}
+
+   .view_indicator ul li{float:left; margin-right:20px; width: 120px; height: 40px; background-color:rgb(255, 240, 158);}
+   .view_indicator ul li:last-child{margin-right:0;}
+
+
+
+
+
+#localNavBox{padding:18px; box-sizing:border-box; width: 1600px; height: 250px;background-color: #cccccc;}
+
+   .local_nav_outer{margin:auto;padding:20px; box-sizing:border-box; width: 1500px; height: 196px; background-color: rgb(17, 162, 219) ;}
+   
+   .local_nav_outer:after,.local_nav_outer::after{content:" "; display:block; clear:both;}
+
+   .local_nav_outer ul{margin:0; margin-left: 55px; padding:0; width:1350px; height:150px; list-style: none;}
+
+   .local_nav_outer ul li{float:left; margin-right:30px; width: 200px; height: 150px; background-color:rgb(255, 240, 158);}
+   .local_nav_outer ul li:last-child{margin-right:0;}
+
+
+   
+
+
+#popularContentBox{width: 1600px;height: 600px;background-color: #aaaaaa;}
+
+h3{margin:auto; margin-bottom:30px; width: 1300px;height: 50px;background-color: rgb(17, 162, 219) ;}
+
+.pop_con_area{margin:auto; padding:3px; box-sizing: border-box; width: 1300px; height: 470px;background-color: rgb(17, 162, 219) ;}
+.pop_con_area:after,.pop_con_area::after{content:" "; display:block; clear:both;}
+
+.pop_con_area ul{margin-left: 18px;}
+
+.li_cont_01 ul{float:left; padding:8px; box-sizing:border-box; margin-right:62px; width: 350px;height: 430px;background-color: rgb(255, 185, 199);list-style: none;}
+.li_cont_01 li{margin-bottom:14px; width:330px;height: 200px;background-color: rgb(160, 84, 160);}
+.li_cont_01 li:last-child{margin-bottom:0;}
+
+.li_cont_02 ul{float:left; padding:8px; box-sizing:border-box; margin-right:62px; width: 350px;height: 430px;background-color: rgb(255, 185, 199);list-style: none;}
+.li_cont_02 li{margin-bottom:14px; width:330px;height: 200px;background-color: rgb(160, 84, 160);}
+.li_cont_02 li:last-child{margin-bottom:0;}
+
+
+.li_cont_03 ul{float:left; padding:8px; box-sizing:border-box; margin-right:62px; width: 350px;height: 430px;background-color: rgb(255, 185, 199);list-style: none;}
+.li_cont_03 li{margin-bottom:14px; width:330px;height: 200px;background-color: rgb(160, 84, 160);}
+.li_cont_03 li:last-child{margin-bottom:0;}
+
+
+
+
+
+#newContentBox{padding:60px; box-sizing:border-box; margin-bottom:80px; width: 1600px;height: 900px; background-color: #cccccc;}
+h3{margin:auto; margin-bottom:30px; width: 1300px; height: 50px; background-color: rgb(17, 162, 219) ;}
+
+.new_con_area{margin:auto; width: 1300px; height: 700px;background-color: rgb(17, 162, 219) ;}
+.new_con_area:after,.new_con_area::after{content:" "; display:block; clear:both;}
+
+.new_con{float:left;}
+.new_con_title_img{width: 640px; height: 350px; background-color:rgb(255, 240, 158);}
+
+.new_con_title_area{padding-top:30px; box-sizing:border-box;width: 640px; height:350px; background-color:rgb(160, 84, 160); clear: both;}
+
+.new_con_title_text{margin:auto;width: 600px; height: 290px; background-color:rgb(255, 240, 158); clear: both;}
+
+
+.new_area{float:right;}
+.new_con_more_area{width: 630px; height: 400px;background-color:rgb(255, 185, 199);}
+
+.new_con_more_01{margin-bottom:40px; width: 630px; height: 180px; background-color:rgb(255, 240, 158);} 
+
+.new_con_more_02{width:630px; height: 180px; background-color:rgb(255, 240, 158);} 
+
+
+
+
+#recommendedContentBox{padding:30px; box-sizing:border-box;margin-bottom:80px; width: 1600px; height: 600px;background-color: #aaaaaa;}
+h3{margin:auto; margin-bottom:30px; width: 1300px;height: 50px;background-color: rgb(17, 162, 219) ;}
+.recom_con_area{margin:auto; width: 1300px; height: 440px;background-color: rgb(17, 162, 219) ;}
+.recom_con_area:after,.recom_con_area::after{content:" "; display:block; clear:both;}
+
+.recom_con_area ul{margin:auto;padding:0; width:1260px; height:440px; list-style: none;}
+
+.recom_con_area ul li{float:left; margin-right:20px;width: 300px;height: 440px;background-color:rgb(255, 185, 199);}
+.recom_con_area ul li:last-child{margin-right:0;}
+
+
+
+
+
+#communityBox{padding:60px; box-sizing:border-box;margin-bottom:80px;width: 1600px;height: 800px; background-color: #cccccc;}
+h3{margin:auto; margin-bottom:30px; width: 1300px;height: 50px;background-color: rgb(17, 162, 219) ;}
+.community_area{margin:auto; width: 1300px; height: 600px;background-color: rgb(17, 162, 219) ;}
+
+.community_area ul{margin:auto;padding:0; width:1260px; height:440px; list-style: none;}
+
+
+#miniAdBox{padding:40px; box-sizing:border-box;margin-bottom:80px; width: 1600px; height: 400px;background-color: #aaaaaa;}
+.mini_ad_outer{margin:auto; width: 1500px; height: 300px;background-color: rgb(17, 162, 219) ;}
+
+
+#footBox{padding:22px; box-sizing:border-box; width: 1600px;height: 200px; background-color: #cccccc;}
+.foot_box{margin:auto; width: 1300px;height: 140px;background-color: rgb(17, 162, 219) ;}
