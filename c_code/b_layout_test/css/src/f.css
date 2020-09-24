@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+html,body {margin: 0;}
+h1,h2,h3,h4,h5,h6,p,div {margin: 0; padding: 0;}
+ul,ol,dl,li,dt,dd {margin: 0; padding: 0; list-style: none;}
+
+
+
+.clearfix::after,.clearfix::after {
+  content: " "; display: block; clear: both;
+}
+
+
+#wrap{padding:15px; box-sizing: border-box;
+      width: 800px;height: 600px;
+      background-color:#dad;}
+  
+   .box{float:left;
+            margin-right:15px; margin-bottom: 10px ;
+            width: 240px;height: 210px;
+            background-color: #fa0;}
+   .box_02{line-height: 130%;}

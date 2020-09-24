@@ -1,82 +1,293 @@
-@charset "utf-8";
-/*layout_02.css*/
+@charset "UTF-8";
+/* layout_test_teacher */
 
-/* reset.css: web페이지 디자인 작업을 위해, 매번 처리해야 하는 번거로운 작업을 미리 설정하여 초기화 시키는 명령어*/
-html,body {margin:0;}
-h1,h2,h3,h4,h5,h6,p,div {margin:0; padding:0;}
+/* reset.css : 웹페이지 디자인 작업을 위해, 매번 처리해야하는 번거로운 작업을 미리 설정하여 초기화 시키는 처리*/
 
-/*design*/
-#wrap {width: 1600px;height:auto;min-height: 500px;
-       margin:auto;}
+html,body {margin: 0;}
+h1,h2,h3,h4,h5,h6,p,div {margin: 0; padding: 0;}
+ul,ol,dl,li,dt,dd {margin: 0; padding: 0; list-style: none;}
 
-#wrap>div {width:100%}
+/*variable.css*/
 
-/* #headBox =================================================================== */
-#headBox {height: 150px; padding:34px 50px 0; box-sizing: border-box;
-         background-color: #ddd;}
-  .logo {float:left; width:250px ; height: 80px;
-         margin-right: 75px;
-         background-color: #0af;}
-  .serch_bar {float:left; width: 850px; height: 80px;
-              background-color: #0af;}
-  .member {float:right; width: 250px; height: 80px;
-           background-color: #0af;}   
+:root {
+  --step2-color: #0af;
+}
+
+/* common.css */
+.clearfix::after,.clearfix:after {
+  content: " "; display: block; clear: both;
+}
+
+/* design */
+
+#wrap {
+  width: 1600px; height: auto; min-height: 500px;
+  margin: auto;
+}
+
+#wrap > div {width: 100%;}
+
+/* #headBox ========== */
+
+#headBox {
+  height: 150px; padding: 34px 50px 0; box-sizing: border-box;  
+  background-color: #ddd;
+}
+  .main_heading {
+    float: left; width: 250px; height: 80px;
+    margin-right: 75px;
+    background-color: var(--step2-color);
+  }
+  .navigation {
+    float: left; width: 850px; height: auto;
+    background-color: var(--step2-color);
+  }
+    .navigation li {
+      float: left;
+      margin: 5px 10px;
+      width: 150px; height: 70px;
+      background-color: #fc7;
+    }
+
+  .member {
+    float: right; width: 250px; height: 80px;
+    background-color: var(--step2-color);
+  }
+
+/* #adViewBox========== */
+
+#adViewBox {
+  height: auto; min-height: 750px; 
+  padding: 28px 0; box-sizing: border-box;
+  background-color: #bbb;
+}
+  .view_outer {
+    width: 1300px; height: 600px;
+    margin: auto;
+    background-color: var(--step2-color);
+  }
+  .view_indicator {
+    width: 840px; height: auto;
+    margin: auto; margin-top: 28px;
+    background-color: var(--step2-color);
+  }
+    .view_indicator > ol {
+      width: 100%; height: auto;
+    }
+    /* float을 정리하기 위해서는 마지막에 clear:both를 사용해야한다.
+    li의 마지막에는 다른 요소가 들어갈 수 없으므로, 가상의 존재를 생성한다.
+    가상의 존재는 ::after형태를 취하고, after은 반드시 content를 가지고 있어야한다. */
+    .view_indicator li {
+      float: left;
+      width: 120px; height: 40px;
+      margin: 10px;
+      background-color: #fc7;
+    }
+  
+/* #localNavBox========== */
+
+#localNavBox {
+  height: auto; 
+  margin-bottom: 50px; padding: 20px 0 30px; box-sizing: border-box;
+  background-color: #aaa;
+}
+  .local_nav_outer {
+    width: 1500px; height: auto;
+    margin: auto; padding: 0 60px; box-sizing: border-box;
+    background-color:var(--step2-color);
+  }
+  .local_nav_outer ul {
+    width: 100%; height: auto;
+  }
+  .local_nav_outer li {
+    float: left;
+    width: 200px; height: 150px;
+    margin: 25px 15px;
+    background-color: #fc7;
+  }
+
+/* .content_area */
+
+.content_area {height: auto;}
+.content_area > div { 
+  width: 100%; 
+  padding-bottom: 30px; box-sizing: border-box;}
+.content_area h3 {
+  width: 1300px; height: 50px;
+  margin: auto; margin-bottom: 30px;
+  background-color:var(--step2-color);
+}
+.con_area {
+  width: 1300px; height: auto; min-height: 400px;
+  margin: auto;
+  background-color: var(--step2-color);
+}
+
+/* #populaContentBox========== */
+
+#popularContentBox {
+  height: auto; background-color: #bbb;
+}
+.pop_con_area {
+  min-height: 470px;
+  padding: 20px 63px; box-sizing: border-box;}
+  .pop_card {
+    float: left;
+    width: 350px; height: 430px;
+    margin-left: 62px; padding: 8px 10px; box-sizing: border-box;
+    background-color: #fc7;
+  }
+    .img_context {
+      width: 100%; height: 200px;
+      margin-bottom: 14px;
+      background-color: #faf;
+    }
+    .narr_context {width: 100%; height: 200px;
+                   background-color: #faf;
+    }
+
+  .pop_card:nth-child(1) {margin-left: 0;}
+
+/* #newContentBox========== */
+
+#newContentBox {
+  height: auto; 
+  margin-bottom: 80px; padding-top: 60px;  
+  background-color: #ccc;
+}
+.new_con_area {min-height: 700px;}
+  
+		.new_con_title_area{float:left; width: 640px;height: 700px; 
+			                   background-color: #fc7;}
+		
+		.new_con_title_img{width: 100%;height: 350px;
+			                 margin-bottom: 30px;   
+											 background-color:  #faf;}
+		.new_con_title_text{width: 600px;height: 290px;
+												margin:auto;
+												background-color: #faf;}
+				.new_con_title_text_01{width: 600px;height: 70px;
+					                     margin-bottom: 30px;  
+					                     background-color:#d62;}	
+				.new_con_title_text_02{width: 600px;height: 190px;  
+					                     background-color: #d62;}							 
 
 
-/* #adViewBox ===================================================================*/
-#adViewBox {height: auto; min-height: 750px; padding:28px; box-sizing: border-box;
-           background-color: #bbb;}
-  .view_outer {width: 1300px;height: 600px;
-	          margin:auto;
-            background-color: #0af;}
-  .view_indicator {width: 850px;height: 60px;
-	                margin:auto;
-	                margin-top: 28px;
-                  background-color: #0af;}
+		.new_con_more_area{float:right; width: 630px; height: 400px;
+		                   background-color: #fc7;}
+		
+		.new_con_more_area > div{width: 100%; height: 180px;
+			                    background-color: #faf;}
+
+		.new_con_more_area_01{margin-bottom: 40px;}
+
+				.new_con_more_area_box_01{float:left;
+					                        width: 200px; height: 180px;
+																	background-color: #d62;}
+																	
+				.new_con_more_area_box_02{float:right;
+					                        margin-top:44px;
+																	width: 380px;height: 136px;
+																	background-color: #d62;}
+
+				.new_con_more_area_box_03{float:left;
+					                        width: 200px; height: 180px;
+																	background-color: #d62;}
+
+				.new_con_more_area_box_04{float:right;
+																		margin-top:44px;
+																		width: 380px;height: 136px;
+																		background-color: #d62;}
+																															
 
 
-/* #localNavBox ===================================================================*/
-#localNavBox {height: 250px;
-						 margin-bottom: 50px; padding:20px 0 25px; box-sizing: border-box; background-color: #aaa;}
-	.local_nav_outer {width: 1500px;height: 100%;
-		margin:auto;
-		background-color: #0af;}
+
+/* #recommendedContentBox========== */
+#recommendedContentBox {
+  height: auto; 
+  margin-bottom: 80px; padding-top: 30px;
+  background-color: #bbb;
+}
+/* .recom_con_area {min-height: 440px;} */
+
+.re_con_part_area{float:left; margin-right: 40px; 
+                  width: 295px;height: 440px; background-color: #fc7;}
+.re_con_part_area:nth-child(4){margin-right: 0;}            
+
+.re_con_part_img{margin-bottom:15px;
+	               width: 295px;height: 210px;
+	               background-color:#84f ;}
+
+.re_con_part_text{margin:auto;
+	                width: 265px; height: 200px;
+	                background-color:#84f ;}
 
 
-/* .content_area*/
-.content_area {height:auto;}
-.content_area>div {width:100%; padding:30px; box-sizing: border-box;}
-.content_area h3 {width: 1300px; height: 50px;
-									margin:auto; margin-bottom: 30px;
-								  background-color: #0af;}
-.con_area {width: 1300px; height: auto; min-height: 400px;
-														 margin:auto;
-														 background-color: #0af;}
+/* #communityBox========== */
+#communityBox {
+  height: auto; 
+  margin-bottom: 80px; padding-top: 60px;
+  background-color: #ddd;
+}
+.community_con_area {min-height: 600px;}
+.community_con_area>ul {width:100%;height: auto;}
+.community_con_area li {width:100%;height:160px;
+												margin-bottom: 60px;
+												background-color: #fc7;}
+.commmunity_con_area li:nth-last-child{margin-bottom: 0;}
+
+.community_box_01{float:left; 
+	                width: 300px; height: 160px;
+									background-color: #d62;}
+									
+.community_con_area dl{float:right; 
+	                     margin-top: 25px;
+	                     width: 970px; height:110px;}
+
+.community_con_area dt{margin-bottom: 20px;
+										 width: 800px; height: 40px;
+										 background-color: #d62;}
+
+.community_con_area dd{width: 970px;height: 50px;
+                      background-color: #d62;}									 
 
 
-/* #popularContentBox ===================================================================*/
-#popularContentBox{height: 600px; background-color: #bbb;}
+
+/* #miniAdBox==========*/
+#miniAdBox {
+  height: auto; 
+  margin-bottom: 80px; padding: 40px 0;
+  background-color: #bbb;
+}
+  .mini_ad_outer {
+    width: 1500px; height: 300px; margin: auto;
+    background-color: var(--step2-color);
+  }
+	
+	.mini_ad_outer>ul{width: 100%; height: 300px;}
+	.mini_ad_outer li{float:left; width: 350px;height: 300px;
+										margin-left:25px; 
+										background-color: #fc7;}
+	.mini_ad_outer li:nth-child(1){width: 750px; margin-left: 0;}
 
 
-/* #newContentBox ===================================================================*/
-#newContentBox{height: 900px;
-               margin-bottom:80px; background-color: #ccc;}
 
-
-/* #recommendedContentBox ===================================================================*/
-#recommendedContentBox{height: 600px;
-                       margin-bottom: 80px;background-color: #bbb;}
-
-
-/* #communityBox ===================================================================*/
-#communityBox{height: 800px;
-              margin-bottom: 80px;background-color:#ddd;}
-
-
-/* #miniAdBox ===================================================================*/
-#miniAdBox{height: 400px;
-           margin-bottom: 80px; background-color:#bbb;}
-
-
-/* #footBox ===================================================================*/
-#footBox{height: 200px;background-color: #aaa;}
+/* #footBox========== */
+#footBox { margin-bottom: 500px;
+  height: auto; padding: 25px 0; 
+  background-color: #aaa;
+}
+  .foot_outer {
+    width: 1300px; height: 140px;
+    margin: auto;
+		background-color: var(--step2-color);
+	}
+	
+	.foot_01{float:left; 
+		       width: 750px;height: 140px;
+					 background-color: #fc7;}
+	.foot_02{float:right; margin-top:32px;
+					 width: 280px;height: 76px;
+					 background-color: #fc7;}
+					 
+	
