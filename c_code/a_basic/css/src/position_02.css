@@ -1,0 +1,167 @@
+@charset "UTR-8";
+
+/* position_02.css */
+
+/* resset.css */
+body, html{margin:0;}
+h1,h2,h3,h4,h5,h6,p{margin:0;}
+ul,ol,li,dl,dt,dd{margin:0; padding:0; list-style:none;}
+
+
+/* common.css */
+.clearfix:after,
+.clearfix::after{content:" ";display:block; clear:both;}
+.hidden{display: block;width: 0;height: 0;  overflow: hidden;}
+
+/* layout.css */
+
+#wrap {
+  width: 960px;height: 5000px;
+  margin:auto;
+  padding-top:200px;
+  background-color: #dfdfdf; 
+  background-image:linear-gradient(15deg, #caa, #0cf, #fa7);
+}
+
+/* 가운데로 배치 하고 싶을 때 
+            : position: ----- ; left:0; righ:0; margin:auto; */
+#headBox{
+  position: fixed;top:0; left: 0; right:0; z-index: 1000;
+  margin:auto;
+  width: inherit; height: 150px;
+  border-bottom: 2px solid#555; 
+  padding:25px; box-sizing: border-box;
+  background-color: #7cf;
+}
+
+h1{
+  width: 90%;height: 100px;
+  margin:auto; background-color: #fff;
+}
+
+#sideBox {
+  display: none; /* display:none; 하면 sideBox를 안보이게 만듦 */
+  position: relative;
+  width: 500px;height: 150px;
+  background-color: #fa0;
+  margin-left: 50%; margin-top: 200px;
+}
+
+.sideBox_02 {
+  position:fixed;top:0;left:50%;
+  margin-left: 480px; 
+  width: 150px; height: 1000px;background-color: rgb(42, 77, 99);
+}
+.sample_fixed {
+  position: absolute; top:0; bottom:0; left: 0;right: 0;
+  margin:auto;
+  width: 300px;height: 100px; background-color: #aaa;
+}
+
+.modal_window {
+  display: none;
+  position: fixed;top: 0;left: 0;
+  width: 100%;height: 100%;
+  background-color: rgba(51,51,51,0.3);
+}
+
+.modal_message {
+  /*  =====가운데로 위치하게 하는 방법=====
+
+    * position: absolute; top:0; bottom:0; left:0; right:0; margin:auto; 
+  
+    * position: absolute; top:calc(50% - 125px); left:calc(50% - 225px);
+  
+    * position: absolute; top:50%;left:50%; margin-top: -125px; 
+
+    * position: absolute; top:50%; left:50%; transform:translate(-50%,-50%); */
+
+  
+  position: absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+
+  /* top, left, bottom, right /margin-top... 등은 부모를 기준으로 %을 가지고,
+     transform은 자신의 크기를 기준으로 %값을 가진다.
+     transform:translate(x축,y축); */
+
+  width: 500px;height: 250px;background-color: #fff;
+  padding:20px;box-sizing: border-box;
+  border-radius: 10px; box-shadow: 0 0 10px rgba(51,51,51,0.7)
+}
+
+/*----------------------------------------------------------------------*/
+
+#viewBox{
+  position: relative; z-index: 500;
+  width: 800px;height: 400px;
+  margin: auto;
+  background-color: #fff;
+}
+#viewBox > h2 {width: 0;height: 0; overflow: hidden;}
+
+.view_indicator{
+  position: absolute; right:30px; bottom:40px; z-index: 50;
+  width: 100px;height: 50px;
+  background-color: #777;
+}
+
+/* .next_btn{
+  position: absolute; top:50%; right:-25px; z-index: 40;
+  margin-top: -25px;
+  width: 50px;height: 50px; 
+  background-color: #777;
+}
+.prev_btn{
+  position: absolute; top:50%; left:-25px; z-index: 40;
+  margin-top: -25px;
+  width: 50px;height: 50px; 
+  background-color: #777;
+} */
+
+
+.view_btn{
+  position: absolute; top:50%; z-index: 40;
+  margin-top: -25px; left:-25px;
+  width: calc(100% + 50px); height: 0px;
+  background-color: #ba5;
+}
+
+/* view_btn내부 높이값이 0인 이유  :
+   다음/이전 버튼 작업 시, 요소를 감쌀때!
+
+   광고 영역에서 다음/이전의 버튼을 생성할 때 부모 요소를 설정하여 영역별 그룹을 처리하고자 할때, 버튼의 위치가 영역에서 각각 좌,우에 배치가 된다면,
+   반드시 부모의 높이값은 0이 되어야 한다.
+   그래야 내용을 선택, 이외의 기능을 처리할 수 있다.
+   높이값이 설정이 되어 있다면 좌,우 버튼의 높이값만큼 이어지는 바가 생기게 됨.
+   
+   */
+
+
+.view_btn > button{
+  border:0;
+  width: 50px;height: 50px;background-color: #777;
+  cursor: pointer;
+  font-size:2rem; color:#fff;}
+
+.prev_btn{float: left;}
+.next_btn{float: right;}
+
+
+
+.view_area{
+  position: relative; z-index: 30;
+  width: 100%;height: 100%;
+  background-color: #ddd;
+}
+
+.view_area div { 
+  position: absolute; top:0; left: 0;
+  width: 100%;height: 100%;
+}
+.adv_01 {z-index:5; background-color: #3f5a25;}
+.adv_01:hover {background-color: lightcoral;}
+.adv_02 {z-index:4; background-color: #582329;}
+.adv_03 {z-index:3; background-color: #753b72;}
+.adv_04 {z-index:2; background-color: #2a5236;}
+.adv_05 {z-index:1; background-color: #6a70c4;}
+
+

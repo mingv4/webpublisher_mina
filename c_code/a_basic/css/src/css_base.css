@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* position_01.css */
+
+/* resset.css */
+body, html{margin:0;}
+h1,h2,h3,h4,h5,h6,p{margin:0;}
+ul,ol,li,dl,dt,dd{margin:0; padding:0; list-style:none;}
+
+
+/* common.css */
+.clearfix:after,
+.clearfix::after{content:" ";display:block; clear:both;}
+.hidden{display: block;width: 0;height: 0;  overflow: hidden;}
+
+/* layout.css */
