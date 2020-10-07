@@ -13,7 +13,7 @@ ul,ol,dl,li,dt,dd {margin: 0; padding: 0; list-style: none;}
 
 
 #wrap{padding:15px; box-sizing: border-box;
-      width: 800px;height: 600px;
+      width: 800px;height: auto;
       background-color:#dad;}
   
    .box{float:left;
@@ -21,3 +21,12 @@ ul,ol,dl,li,dt,dd {margin: 0; padding: 0; list-style: none;}
             width: 240px;height: 210px;
             background-color: #fa0;}
    .box_02{line-height: 130%;}
+
+
+
+.question_02{width: 936px;height: auto; margin:auto; background-color: #ddd;}
+
+.question_02:after{content:" "; display:block; position: absolute;top:0;left:-50vw; margin-left:50%; z-index: -1;}
+
+
+

@@ -2,9 +2,31 @@
 /* position_01.css */
 
 /* resset.css */
-body, html{margin:0;}
-h1,h2,h3,h4,h5,h6,p{margin:0;}
-ul,ol,li,dl,dt,dd{margin:0; padding:0; list-style:none;}
+html, body{margin:0;}
+h1,h2,h3,h4,h5,h6,p,table,tr,th,td,{margin:0;padding:0;}
+ul,ol,dl,dt,dd,li{margin:0; padding:0; list-style:none;}
+hr {margin: 0; padding:0; width: 100%;height: 0; border-bottom:1px solid #fff;}
+button{margin: 0;padding: 0; border: 0; background-color:transparent; cursor: pointer;}
+a{color:inherit; text-decoration: none;}
+a:hover,a:focus {text-decoration: underline;}
+table,tr,th,td,thead,tbody,tfoot {margin: 0; padding: 0; border: 1px solid#333; border-spacing: 0; border-collapse: collapse;}
+header,section,article,nav,main,footer,aside,figure {display:block;}
+
+
+
+/* resset.css */
+html,body{margin:; padding:0; font-family: sans-serif;}
+h1,h2,h3,h4,h5,h6,p,img,div,table,tr,th,td,
+ul,ol,dl,dt,dd,li{margin:0; padding:0; border:0; outline:0;}
+
+ul,ol,li {list-style: none;}
+a{text-decoration: none; color:inherit}
+button{margin:0; ;padding:0;  border:0;
+      background-color: transparent;cursor: pointer;}
+table,thead,tbody,tfoot,tr,th,td{
+  border: 1px solid#777; border-spacing: 0;border-collapse:collapse}
+caption{width: 0;height: 0;overflow: hidden; position: absolute; z-index: -1;}
+hr {margin:0; padding:0; border-bottom: 1px solid#333;}
 
 
 /* common.css */

@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/* background_01.css */
+
+/* resset.css */
+
+/* html, body{margin:0;}
+h1,h2,h3,h4,h5,h6,p{margin:0;padding:0;}
+ul,ol,dl,dt,dd,li{margin:0; padding:0; list-style:none;}
+hr {margin: 0; padding:0; width: 100%;height: 0; border-bottom:1px solid #fff;}
+button{margin: 0;padding: 0; border: 0; background-color:transparent; cursor: pointer;}
+a{color:inherit; text-decoration: none;}
+a:hover,a:focus {text-decoration: underline;}
+table,tr,th,td,thead,tbody,tfoot {margin: 0; padding: 0; border: 1px solid#333; border-spacing: 0; border-collapse: collapse;}
+header,section,article,nav,main,footer,aside,figure {display:block;} */
+
+
+/* common.css */
+
+/* .clearfix:after,
+.clearfix::after{content:" ";display:block; clear:both;}
+.hidden{display: block;width: 0;height: 0;  overflow: hidden;} */
+
+/* layout.css */
+
+#wrap {
+  width: 960px; height: auto; margin: auto; margin-bottom: 1000px; background-color: #dfdfdf;
+}
+h1 {
+  padding: 10px; background-color: #0ac; color:fff; text-indent:20px;
+}
+h2 {width: 100%;height: 25px; 
+  font-size:20px; color:#171717; line-height:25px; background-color: #ccc;
+}
+.part {width: 100%; height: 500px; border-bottom:2px solid#333;}
+
+h3{width: 100%;height: 15px; font-size:12px;margin:0; background-color: #ccf;}
+.inner {width: 95%; height: 470px;margin: auto; border:1px solid#333;}
+/* =========== */
+
+.image .inner {background-image:url("../../img/background_img/i_01.png");}
+
+.repeat .inner{
+  background-image:url("../../img/background_img/i_02.png");
+  background-repeat: no-repeat;
+}
+
+/* ---- img요소와 background-image 차이점 ----
+
+    1. background-image는 반복 요소의 기능을 가진다.
+    2. 내부 요소와, 배경이미지는 같이 중첩으로 사용이 가능하다.
+    3. background-image는 이미지를 불러올 경우 url()함수를 사용.   
+    4. url()내부에는 css문서상의 상대경로로 이미지를 불러오며 "" 내부에 작성을 권장.
+    5. background-image 사용 시 이미지는 반복 처리 되므로, 이를 수정 가능
+        background-repeat: repeat | repeat-x | repeat-y | no-repeat; */
+
+
+.position .inner {
+  background-image:url("../../img/background_img/i_03.png");
+  background-repeat: no-repeat;
+  background-position:50% 50%; 
+} 
+
+/* 
+---- background-position : 이미지의 위치를 설정하는 기능 ----
+
+1. background-position: 0 0;  앞은  x좌표 뒤는 y좌표
+2. top, left, right, bottom, center 등의 속성을 사용할 수 있다.
+   ------------------권장하지 않음. 
+   % 나 px값으로 정확한 수치를 표시하는것을 권장.
+
+   ex) background-position : center left;  - 권장하지 않음
+   ex) background-position : 50% 30px; - 권장
+
+3. background-position에서는 % 좌표의 경우 배경 요소의 크기 비율과, 이미지 속성의 크기 비율을 조합하여 배치한다.
+   ex) background-position : 0 30% 인 경우 
+       x축 0, y축은 배경 요소에서의 30%의 위치에, 이미지의 30% 위치 부분을 배치하게 됨.  
+   */
+
+   .size .inner {
+     background-image: url("../../img/background_img/i_04.png");
+     background-repeat: no-repeat;
+     background-position: 50% 50%;
+     background-size: contain;
+     transition:all 500ms ease;
+   }
+   /* .size .inner:hover { background-size: 200% auto;} */
+   
+   /* 
+      ---- background-size: 이미지의 크기값을 설정하는 기능 ----
+
+      * background-size: 0 0  ----  x축 0, y축 0
+      * background-size: contain;  ----  전체 이미지를 다 보이게 화면에 배치
+      * background-size: cover;  ----  빈 공간이 보이지 않게 이미지를 배치
+      * background-size: auto;  ----  이미지를 화면에 맞게 배치
+      * background-size: 100% auto;  ----  x축만 화면에 꽉 차게 배치
+      * background-size: auto 100%;  ----  y축만 화면에 꽉 차게 배치
+
+    hover, focus, active...등의 기능을 사용 시 전,후의 값을 비교 가능하도록 처리하여야 자연스럽게 처리됨 (x축이 auto면 기능의 x 값도 auto)
+    */
+
+    .clip .inner{
+      background-image: url("../../img/background_img/i_05.png");
+      background-repeat: no-repeat;  
+      background-position: 50% 50%; 
+      background-size: 120% auto;
+      border:50px dotted #fa0; box-sizing: border-box;
+      padding:40px;
+      font-size: 5rem; font-weight: 900; overflow: hidden;
+      -webkit-background-clip: text; color:transparent;
+    }
+
+      /* background-clip: text; color:transparent; 
+       ---- 글자를 투명하게 하고, 그 위에 색을 덮어씌워 
+            배경 이미지를 가진 글자처럼 보이게 처리*/
+
+      /* 
+         벤더 프리픽스란? 
+           - 아직 지원하지 않는 css 기능을 브라우저에 임시로 내장하였다면,
+             강제로 쓸 수 있도록 처리하는 것으로 속성의 앞에 벤더를 달고(-x-)
+             그 내부에 지원 브라우저 타입을 정의하여 사용하는 형태 
+            
+             ex)
+                -webkit-background-clip: border-box;
+                background-image:-webkit-linear-gradient(#aaa, #a77);
+
+             작성 요령은 -webkit-, -moz-, -ms-, -oo-, 벤더가 없는 형태 순으로
+             작업하게 되어 있으며, 표준으로 권고되면 프리픽스 형태는 삭제하도록 처리되어 있다. 
+             */
+    
+    /* ---- background-clip: 배경 이미지의 범위를 지정하는 것 ----
+
+       background-clip: border-box ---- (외곽선 까지)이미지 내부에 삽입
+       background-clip: padding-box ---- (padding 까지) 이미지 외부에 삽입
+       background-clip: content-box ---- (선, 패딩을 제외한) /
+                                          이미지와 clip사이에 빈공간 존재 */
+
+
+.attatchment .inner {
+  background-image: url("../../img/background_img/erda-estremera.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 50% auto;
+  font-size: 3rem; color: #fff; text-indent: 20px;
+  background-attachment: fixed;
+}
+
+/*  ---- background-attatchment: 배경 이미지를 스크롤에 따라 고정/ 스크롤 처리에 대한 설정 ----
+
+      background-attatchment:scroll(기본,스크롤에 따라 이미지가 따라다님) | fixed (이미지가 배경에 고정);
+*/
