@@ -1,0 +1,76 @@
+@charset "UTF-8";
+#wrap {
+  width: 460px; height: 400px; 
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+h1 {
+  margin:auto;
+  width: 212px;height: 60px;
+  background-image: url("../../img/2020-10-151515.jpeg");
+}
+
+fieldset { 
+ width: 460px; height: auto;
+ border:0;
+ margin:0; padding:0; box-sizing: border-box;}
+
+ .user_sign input {
+   width:415px; height: 50px; float:left;
+   margin:0; padding:0; box-sizing: border-box;
+   border:1px solid #aaa;
+   color:#aaa; font-size: 1rem; font-weight: bold;
+   text-indent: 0.5rem;
+  }
+  .user_sign input:nth-of-type(2){width: 370px;height: 50px;margin-top:15px;}
+
+  #testCheck:checked+label>i{color:#f07;}
+
+  .user_sign label {
+    display: block; float:left;
+    width: 45px; height: 50px; border-right:0;
+    border:1px solid #aaa; box-sizing: border-box;}
+    
+    .user_sign label {border-right:0;}
+
+  .user_sign label:first-of-type{ background-image: url("../../img/2020-10-15.jpeg"); background-repeat:no-repeat;
+  background-position: 50%;}
+  .user_sign label:nth-of-type(2){margin-top:15px;
+  background-image: url("../../img/2020-10-1515.jpeg"); background-repeat: no-repeat; background-position: 50%;}
+  .user_sign label:nth-of-type(3){margin-top:15px;border-right: 1px solid#aaa;}
+
+  .auto_and_find {
+    font-size: 0.8rem;
+    margin:10px 0;
+    width: 460px;height: 25px;
+    
+  }
+  .auto_and_find a {
+    color:rgb(44, 44, 230);
+    float:right; margin-right: 5px;
+  } 
+
+ .log_in button {
+   border:0;padding:0;box-sizing: border-box;
+   width: 460px;height: 55px; background-color:#0075E9;
+   color:#fff; font-size: 1rem;
+   border-radius: 3px;
+}
+
+.bar {
+  border:0; margin:20px 0;
+border-top:1px solid#aaa;}
+
+.join button {
+  border:0;padding:0;box-sizing: border-box;
+  border-radius: 3px;
+  width: 460px;height: 55px;
+  color:#0075E9; font-size: 1rem;
+  border:1px solid#aaa;
+}
+
+.footer p {
+  margin-top:5px;
+  text-align: center; font-size:0.8rem; color:#777;
+}

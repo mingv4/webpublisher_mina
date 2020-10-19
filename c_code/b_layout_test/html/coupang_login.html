@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- 문서이름.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  
+  <link rel="stylesheet" href="../fonts/fontawsome/css/all.css">
+  <link rel="stylesheet" href="../fonts/noto_sans/noto_sans.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/coupang_login.css">
+
+  <title>Document</title>
+</head>
+<body>
+<!-- layout-->
+
+<div id="wrap">
+<h1><a href="https://www.coupang.com/"><span class="hidden_context">logo</span></a></h1>
+
+<form action="#" method="post">
+  <fieldset class="member_login">
+    <legend class="hidden_context">멤버 로그인</legend>
+
+    <div class="user_sign">
+      <label for="userId">
+        <span class="hidden_context"> 아이디(이메일)</span>
+      </label>
+      <input type="text" id="userId" name="userId" value="" placeholder="아이디(이메일)" /> 
+
+
+      <label for="userPw" ><span class="hidden_context">
+        패스워드</span></label>
+      <input type="password" id="userPw" name="userPw" value="" placeholder="비밀번호" />
+
+      <input type="checkbox" id="testCheck" class="hidden_context">
+      <label for="testCheck">
+        <i class="far fa-eye"></i>
+        <span class="hidden_context">체크테스트</span>
+      </label>
+    </div>
+
+ </fieldset>
+ 
+ <fieldset class="auto_and_find">
+ <legend class="hidden_context">자동로그인/찾기</legend>
+ <input type="checkbox" name="auto" id="auto_login" value=""/>
+ <label for="auto_login">자동로그인</label>
+ <a href="#">아이디(이메일)/비밀번호 찾기</a>
+ </fieldset>
+
+ <fieldset class="log_in"> 
+  <legend class="hidden_context"> 로그인</legend>
+  <button type="submit">로그인</button>
+ </fieldset>
+
+<hr class="bar"/>
+
+<fieldset class="join"> 
+  <legend class="hidden_context"> 회원가입</legend>
+  <button type="submit">회원가입</button>
+
+</fieldset>
+
+<div class="footer">
+  <p> ©Coupang Corp. All rights reserved. </p>
+</div>
+  
+</form>
+
+
+
+
+
+
+</div>
+  <!-- stript -->
+  <script src="파일이름.js"></script>
+</body>
+</html>
