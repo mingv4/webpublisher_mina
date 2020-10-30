@@ -1,0 +1,73 @@
+@import url("../kakao_i_t/a_main_wrap.css");
+@import url("../kakao_i_t/b_headBox.css");
+@import url("../kakao_i_t/c_viewBox.css");
+@import url("../kakao_i_t/d_smartKakaoBox.css");
+@import url("../kakao_i_t/e_heiKakaoBox.css");
+@import url("../kakao_i_t/f_sendBox.css");
+@import url("../kakao_i_t/g_contentBox.css");
+@import url("../kakao_i_t/h_footBox.css");
+
+/* 브라우저의 가로값의 넓이를 기준으로 %로 분할하여 사용하는 단위값 : vw */
+/* 브라우저 1440크기값을 기준으로 작성 */
+
+
+html,body { height: 100%;}
+
+#wrap {
+  width: 100%; min-width: 1440px; height: 100%; min-height: 800px;
+  margin: auto; 
+}
+
+
+#headBox {
+  position: fixed;top:0; left:0; z-index:1000;
+  width: 100%;height: 35px;background-color: #aaa;
+}
+#viewBox {
+  width: 100%; /*height: 100%; min-height: 600px; */
+  height: 70vw;
+  margin-bottom: 25px;
+  background-color: #ffd200;
+}
+#smartKakaoBox:after{content:"";display:block;clear: both;}
+
+#smartKakaoBox {
+  width: 100%; height: auto;
+  padding:20px; box-sizing: border-box;
+  background-color: #0ca;
+}
+
+.ai_area {
+  float:left;    /* w-----690 / 1440 * 100 = 47.916667vw----- */
+                 /* h-----430 / 1440 * 100 = 29.861111vw----- */
+  width:47.916667vw; min-width: 690px; 
+  height:29.861111vw; min-height: 430px; background-color: #caa;
+}
+.hei_area { 
+  float:right;   /* w-----690 / 1440 * 100 = 47.916667vw----- */
+                 /* h-----430 / 1440 * 100 = 29.861111vw----- */
+  width:47.916667vw; min-width: 690px; 
+  height:29.861111vw; min-height: 430px; background-color: #caa;
+}
+
+#heiKakaoBox {
+  width: 100%; height: 100%;min-height: 700px;
+  margin-bottom: 25px;
+  padding:20px; box-sizing: border-box;
+  background-color: #aaa;
+}
+.inner_wrap { width: 100%; height: 100%; background-color: #fa0;}
+
+#sendBox {
+  width: 100%; height: 180px;
+  margin-bottom: 45px;
+  background-color: #acf;
+}
+#contentBox {
+  width: 100%; height: 350px;
+  margin-bottom:45px;
+  background-color: #fca;
+}
+#footBox {
+  width: 100%; height: 130px; background-color: #cca;
+}
