@@ -6,7 +6,9 @@
 (function($){
   //jQuery
   var headBox = $('#headBox');
+  var viewBox = $('#viewBox');
   headBox.load('./monfee/headBox.html');
+  viewBox.load('./monfee/viewBox.html');
 })(jQuery);
 
 //jQuery에서는 선택자의 형태는 css와 매우 유사.

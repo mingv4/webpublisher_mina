@@ -1,26 +1,3 @@
-@charset "UTF-8";
-
-/* monfee_main.css */
- @import url('./monfee/monfee_wrap.css');
- @import url('./monfee/monfee_headBox.css');
- @import url('./monfee/monfee_viewBox.css');
-
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {display:none;} /*크롬,사파리 스크롤바 제거*/
-html,body {
-  -ms-overflow-style:none; /*ie,edge 스크롤바 제거*/
-  scrollbar-width: none; /*firefox스크롤바 제거 */
-}
-
-#wrap {
-  width:100%; min-width: 940px; height:auto; min-height: 5000px;
-  margin:auto;
-  background-color: #dfdfdf;
-}
-
-
-/* -------------------------------//headBox */
-
 #viewBox{
   position: relative;
   width: 100%; height:100vh ;min-height: 800px;
@@ -79,6 +56,7 @@ html,body {
 }
 
 .back_image {
+  position:relative; z-index:100; /*위치제한*/
   width: 500%; /*width:500;*/ height: 100%;
   /* margin-left: 100%; */
   /* margin-left:-100%; */
@@ -96,33 +74,3 @@ html,body {
 .back_image li.view_04{background-color: #1B4549;}
 .back_image li.view_05{background-color: #B41DE4;}
 /* -------------------------------//viewBox */
-
-#bestNewsBox{
-  width: 940px; height:1080px ;margin: auto; background-color: #acf;
-}
-/* -------------------------------//bestNewsBox */
-
-#issueBox{
-  width: 100%; height:auto ;min-height: 1340px;
-}
-.issue_text {
-  width: 100%; height: 860px; background-color: #ccaaaa;}
-.issue_icon {
-  width: 100%; max-width: 1260px; height:480px;margin:auto;
-background-color: #aca;
-}
-
-/* -------------------------------//issueBox */
-
-#conBox{
-  width: 100%; height:auto ;min-height: 1880px; background-color: #999a2c;
-}
-.content_text { width: 100%;height: 600px;background-color: #add;}
-.material_icon {width: 100%;height: 200px;background-color: #fdd;}
-#location {width: 100%;height: 1080px;background-color: #f1c252;}
-/* -------------------------------//conBox */
-
-#footBox{
-  width: 100%; height: 396px; background-color: #cac;
-}
-/* -------------------------------//footBox */
