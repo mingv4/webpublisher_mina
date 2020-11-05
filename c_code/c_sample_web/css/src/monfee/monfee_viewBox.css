@@ -47,7 +47,7 @@
 }
 .text_part dt{
   width: 100%;height: 150px;
-  background-image: url('../../img/monfee/monfee_logo.png');
+  background-image: url('../../../img/monfee/monfee_logo.png');
   background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;
 }
 .text_part dd{
@@ -68,9 +68,9 @@
   font-size: 3rem; text-align: right; 
   box-sizing: border-box;padding-top: 100px; padding-right:50px;
 }
-.back_image li.view_01{background-color: #C278DD;}
-.back_image li.view_02{background-color: #CD8D40;}
-.back_image li.view_03{background-color: #7235D5;}
-.back_image li.view_04{background-color: #1B4549;}
-.back_image li.view_05{background-color: #B41DE4;}
+.back_image li.view_01{background-color: #fff;}
+.back_image li.view_02{background-color: #fff;}
+.back_image li.view_03{background-color: #fff;}
+.back_image li.view_04{background-color: #fff;}
+.back_image li.view_05{background-color: #fff;}
 /* -------------------------------//viewBox */
