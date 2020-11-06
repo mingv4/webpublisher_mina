@@ -54,8 +54,8 @@ border-radius: 100%;}
   float:left;
   width: 300px;height: 300px;}
 
-.product_01 {background-color: #202A21;}
-.product_02 {background-color: #DF5F89;}
-.product_03 {background-color: #1DB4B0;}
-.product_04 {background-color: #D7F342;}
-.product_05 {background-color: #0EDC5B;}
+.product_01 {background-image: url('../../img/monfee/minicake/minicake/tj_minicake_001.jpg');background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+.product_02 {background-image: url('../../img/monfee/minicake/minicake/tj_minicake_002.jpg');background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+.product_03 {background-image: url('../../img/monfee/minicake/minicake/tj_minicake_003.jpg');background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+.product_04 {background-image: url('../../img/monfee/minicake/minicake/tj_minicake_004.jpg');background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
+.product_05 {background-image: url('../../img/monfee/minicake/minicake/tj_minicake_005.jpg');background-repeat: no-repeat; background-position: 50% 50%; background-size: contain;}
