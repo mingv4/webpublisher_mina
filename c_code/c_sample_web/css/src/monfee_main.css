@@ -4,6 +4,7 @@
  @import url('./monfee/monfee_wrap.css');
  @import url('./monfee/monfee_headBox.css');
  @import url('./monfee/monfee_viewBox.css');
+ @import url('./monfee/monfee_bestNewsBox.css');
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {display:none;} /*크롬,사파리 스크롤바 제거*/
@@ -15,7 +16,7 @@ html,body {
 #wrap {
   width:100%; min-width: 940px; height:auto; min-height: 5000px;
   margin:auto;
-  background-color: #dfdfdf;
+  background-color:#fff;
 }
 
 
@@ -24,9 +25,7 @@ html,body {
 
 /* -------------------------------//viewBox */
 
-#bestNewsBox{
-  width: 940px; height:1080px ;margin: auto; background-color: #acf;
-}
+
 /* -------------------------------//bestNewsBox */
 
 #issueBox{

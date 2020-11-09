@@ -1,0 +1,54 @@
+#bestNewsBox{
+  padding-top: 50px; padding-bottom: 70px;
+  width: 940px; height:1080px ;margin: auto;background-color: #fff;
+}
+#bestNewsBox h2 {
+  margin-bottom: 30px;
+  width: 100%;height: 55px; font-size: 1.875rem; text-decoration: underline;
+}
+/* #bestNewsBox ul { class="clearfix" } */
+#bestNewsBox li {
+  float:left;
+  width: 220px;height: 410px;margin-right: 20px; margin-bottom:50px;
+  background-color: #fff; border-radius: 4px; padding:5px;box-sizing: border-box;
+  border: solid 1px; border-color: #777;
+ }
+#bestNewsBox li:nth-child(4n){margin-right:0;}
+#bestNewsBox li:nth-last-child(-n+4){margin-bottom:0;}
+
+#bestNewsBox a {display:block;position: relative; width: 100%;height:100%;}
+
+#bestNewsBox a::after {
+  content:"새로운 메뉴";display: block; position: absolute; top:10%; left:50%;
+  transform:translateX(-50%); width: 50%;height: 150px; 
+  padding-top:100px;box-sizing: border-box;
+  background-image: url(../../../img/monfee/new_menu/menu_on.png);background-repeat: no-repeat; 
+  background-position: 50% 100%; opacity: 0; transition: all 300ms linear 150ms; font-weight: 400; color:#fff;
+  text-align: center;
+}
+#bestNewsBox a:hover::after,
+#bestNewsBox a:focus::after{opacity:1;background-position-y: 80%;}
+
+#bestNewsBox a:before{ 
+  content:" "; display:block; position: absolute; top:0;
+   width: 100%; height: 240px; opacity:0;transition:all 300ms ease;
+   background-color:var(--color-monfee-primary-opacity);
+}
+
+#bestNewsBox a:hover::before,
+#bestNewsBox a:focus::before{opacity:1;}
+
+
+
+#bestNewsBox .news_img{ 
+  width: 100%;height: 240px; background-color: #ccc;
+  background-repeat: no-repeat;background-position: 50% 50%; background-size: cover;
+  border-radius: 4px;
+}
+#bestNewsBox dl{width: 100%;height: auto; padding:0.7rem;box-sizing: border-box;}
+#bestNewsBox dt{width: 100%;height: auto; font-size: 1.2rem; margin-bottom: 6px; font-weight: bold;}
+#bestNewsBox dd{
+  width: 100%;height: auto;
+  line-height: 120%; letter-spacing: -0.02rem;
+  font-size:1rem; 
+  color:var(--color-monfee-deep-gray);}
