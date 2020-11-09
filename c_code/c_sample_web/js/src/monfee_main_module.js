@@ -8,10 +8,15 @@
   var headBox = $('#headBox');
   var viewBox = $('#viewBox');
   var bestNewsBox=$('#bestNewsBox');
+  var issueBox=$('#issueBox');
 
-  headBox.load('./monfee/headBox.html');
-  viewBox.load('./monfee/viewBox.html');
+  headBox.load('./monfee/monfee_headBox.html');
+  viewBox.load('./monfee/monfee_viewBox.html');
+  issueBox.load('./monfee/monfee_issueBox.html',function(){
+    $(this).append('<script src="../js/src/issueBox.js"></script>');
+  });
   bestNewsBox.append('<script src="../js/src/bestNewsBox.js"></script>');
+
 })(jQuery);
 
 //jQuery에서는 선택자의 형태는 css와 매우 유사.
