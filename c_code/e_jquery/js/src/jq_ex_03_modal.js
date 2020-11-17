@@ -69,11 +69,12 @@ mLiBtn.on('click',function(e){
     var it = $(this).parent('li');
     var itI = it.index();
     indexChdek = itI;
-    var thisBig = it.attr('data-big');
-    var thisNarr = it.attr('data-narr');
+    // var thisBig = it.attr('data-big');
+    // var thisNarr = it.attr('data-narr');
 
-    bigImg.css({backgroundImage:'url('+url+thisBig+')'});
-    bigNarr.text(thisNarr);
+    // bigImg.css({backgroundImage:'url('+url+thisBig+')'});
+    bigImg.css({backgroundImage:'url('+url+data[indexChdek].bigImg+')'});
+    bigNarr.text(data[indexChdek].content);
     gallery.stop().fadeIn(function(){
         galleryClose.children('button').focus();
         setTimeout(function(){
