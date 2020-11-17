@@ -63,18 +63,18 @@ var bigImg = gallery.find('.big_img');
 var bigNarr = bigImg.children('p');
 var timed = 500;
 
-var indexChdek;
+var indexcheck;
 mLiBtn.on('click',function(e){
     e.preventDefault();
     var it = $(this).parent('li');
     var itI = it.index();
-    indexChdek = itI;
+    indexcheck = itI;
     // var thisBig = it.attr('data-big');
     // var thisNarr = it.attr('data-narr');
 
     // bigImg.css({backgroundImage:'url('+url+thisBig+')'});
-    bigImg.css({backgroundImage:'url('+url+data[indexChdek].bigImg+')'});
-    bigNarr.text(data[indexChdek].content);
+    bigImg.css({backgroundImage:'url('+url+data[indexcheck].bigImg+')'});
+    bigNarr.text(data[indexcheck].content);
     gallery.stop().fadeIn(function(){
         galleryClose.children('button').focus();
         setTimeout(function(){
@@ -87,7 +87,7 @@ mLiBtn.on('click',function(e){
 galleryClose.on('click',function(e){
     e.preventDefault();
     gallery.stop().fadeOut();
-    modalLi.eq(indexChdek).find('button').focus();
+    modalLi.eq(indexcheck).find('button').focus();
   
     bigNarr.removeClass('action');
 });
