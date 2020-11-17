@@ -32,11 +32,13 @@
 var url = "../../img/modal/";
 var modalInCode =  '<li><button type="button"><span></span></button></li>';
 var galleryCode =  '<div class="gallery_box"><div class="gallery_area"><div class="close"><button type="button"><span></span></button></div><div class="big_img"><p></p></div></div></div>'; 
-
+var gallery,galleryClose,bigImg,bigNarr;
+var indexcheck;
+var timed = 500;
 // --------------------------------------------------------------
 var modal01 = $('.modal_01');
-//modal01.append(galleryCode); // 선택자 내부의 뒤에
-modal01.after(galleryCode); //선택자 바로 뒤에
+
+
 var modalUl=modal01.children('ul');
 
 var temLi
@@ -57,13 +59,7 @@ for(;i<data.length; i+=1){
 var modalLi = modal01.find('li');
 var mLiBtn = modalLi.find('button');
 
-var gallery = $('.gallery_box');
-var galleryClose = gallery.find('.close');
-var bigImg = gallery.find('.big_img');
-var bigNarr = bigImg.children('p');
-var timed = 500;
 
-var indexcheck;
 mLiBtn.on('click',function(e){
     e.preventDefault();
     var it = $(this).parent('li');
@@ -71,7 +67,15 @@ mLiBtn.on('click',function(e){
     indexcheck = itI;
     // var thisBig = it.attr('data-big');
     // var thisNarr = it.attr('data-narr');
+//--------------------------------------------------------------------------------------
+//modal01.append(galleryCode); // 선택자 내부의 뒤에
+modal01.after(galleryCode); //선택자 바로 뒤에
+gallery = $('.gallery_box');
+galleryClose = gallery.find('.close');
+bigImg = gallery.find('.big_img');
+bigNarr = bigImg.children('p');
 
+//---------------------------------------------------------------------------------------
     // bigImg.css({backgroundImage:'url('+url+thisBig+')'});
     bigImg.css({backgroundImage:'url('+url+data[indexcheck].bigImg+')'});
     bigNarr.text(data[indexcheck].content);
@@ -82,7 +86,7 @@ mLiBtn.on('click',function(e){
         }, timed/2)
         
     });
-});
+
 
 galleryClose.on('click',function(e){
     e.preventDefault();
@@ -90,5 +94,8 @@ galleryClose.on('click',function(e){
     modalLi.eq(indexcheck).find('button').focus();
   
     bigNarr.removeClass('action');
+    gallery.remove();
+});
+//-----------------------------------------------------------------------------------------
 });
 })(jQuery);
