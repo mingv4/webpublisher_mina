@@ -59,7 +59,7 @@ var liScrollMove = function(e){
 //    $.each(배열, function(배열요소 순서, 순서에 맞는 배열요소 각각){});
 
 var btnCollection = [topBtn,navLi]  // 위의 topBtn, navLi 선택자를 하나로 합침
-$.each([topBtn,navBtn],function(i,btn){
+$.each(btnCollection,function(i,btn){
     btn.on('click',['a'],liScrollMove);
 });
 //-------------------------------------------------------------------------------
@@ -74,10 +74,21 @@ popupBtn.on('click',function(e){
 
 //--------------------------------------------------------------------------------
 
+// 3. tab 메뉴
 
+var tab = $('.tab_li');
+var tabLi = tab.find('li');
+var tabConWrap = $('.tab_content');
+var tabCon = tabConWrap.find('div');
 
+tabLi.on ('click',['a'],function(e){
+    e.preventDefault();
+    var it = $(this);
+    var itI = it.index();
 
-
+    tabCon.eq(itI).show();
+    tabCon.eq(itI).siblings().hide();
+});
 
   //jQuery End
 })(jQuery);
