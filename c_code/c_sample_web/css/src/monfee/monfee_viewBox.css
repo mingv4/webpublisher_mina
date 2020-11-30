@@ -11,8 +11,8 @@
 }
 .slide_btn>button {
   float:left;
-  width: 85px;height: 175px;
-  transform: translateY(-50%); background-color: #7777aa;
+  width: 100px;height: 100px;
+  transform: translateY(-50%); background-color: #fff; border-radius: 50%;
 }
 .slide_btn>button:first-of-type {float:right;}
 
@@ -20,7 +20,7 @@
   position: absolute; bottom:20px; left:50%; margin-left:90px; z-index:800;
   padding:5px; border-radius: 50px;
   width: 360px;height:40px;
-  background-color: var(--color-monfee-deep-gray);}
+ }
 
 .slide_indicator>ul { width: 100%;height: auto;}
 .slide_indicator>ul>li {
@@ -68,9 +68,14 @@
   font-size: 3rem; text-align: right; 
   box-sizing: border-box;padding-top: 100px; padding-right:50px;
 }
-.back_image li.view_01{background-color: #fff;}
-.back_image li.view_02{background-color: #fff;}
-.back_image li.view_03{background-color: #fff;}
-.back_image li.view_04{background-color: #fff;}
-.back_image li.view_05{background-color: #fff;}
+.back_image li.view_01{background-image: url(../../../img/monfee/issueBanner/issue_banner_01.png);
+background-repeat: no-repeat; background-position: 50%, 50%; background-size: cover;}
+.back_image li.view_02{background-image: url(../../../img/monfee/issueBanner/issue_banner_02.png);
+background-repeat: no-repeat; background-position: 50%, 50%; background-size: cover;}
+.back_image li.view_03{background-image: url(../../../img/monfee/issueBanner/issue_banner_03.png);
+background-repeat: no-repeat; background-position: 50%, 50%; background-size: cover;}
+.back_image li.view_04{background-image: url(../../../img/monfee/issueBanner/issue_banner_04.png);
+background-repeat: no-repeat; background-position: 50%, 50%; background-size: cover;}
+.back_image li.view_05{background-image: url(../../../img/monfee/adBanner/slide_04.png);
+background-repeat: no-repeat; background-position: 50%, 50%; background-size: cover;}
 /* -------------------------------//viewBox */

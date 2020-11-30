@@ -38,7 +38,7 @@ $('h1').on('mouseleave',function(){
   var backLi  = backImg.find('li');
   var permission = true; 
 
-  // 순서를 언급시에는 eq()메소드를 사용 0~...., -1,-2....fa-js
+  // 순서를 언급시에는 eq()메소드를 사용 0~...., -1,-2....
   // 복제의 기능은 clone()  -> 복제된기능을 원본처럼 수행하게하려면 true 매개변수를 입력
   // console.log(backLi);
 

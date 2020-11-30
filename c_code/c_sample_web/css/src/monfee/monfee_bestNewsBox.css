@@ -11,7 +11,7 @@
   float:left;
   width: 220px;height: 410px;margin-right: 20px; margin-bottom:50px;
   background-color: #fff; border-radius: 4px; padding:5px;box-sizing: border-box;
-  border: solid 1px; border-color: #777;
+  border: solid 2px; border-color: #ccc;
  }
 #bestNewsBox li:nth-child(4n){margin-right:0;}
 #bestNewsBox li:nth-last-child(-n+4){margin-bottom:0;}
