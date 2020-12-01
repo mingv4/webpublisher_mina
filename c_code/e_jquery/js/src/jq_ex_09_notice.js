@@ -6,6 +6,11 @@ $.ajax({
     dataType: 'json',
     context: document.body
 }).done(function(data){
+      // 1. 순서를 뒤집어서 배치.
+    // 2. 한번에 보일 내용(30)을 적당히 줄여서 배치
+    // 2-1. 인디케이터 생성하여 그 순번에 맞는 내용 나타내기
+    // 3. 오름차순, 내림차순 연결해보기
+    
     var dataFile = data.sort(function(a,b){
         return b.id - a.id; //뒷 순서부터 배열
     });
@@ -19,43 +24,90 @@ $.ajax({
 
     var indiCon = notice.children('.indicator');
     var indiArea = indiCon.children('ul');
+    //기본세팅
+    var myViewLen = 70; // 한번에 보일 갯수
+    
+    
+    //인디케이터 생성하기 + 한번에 보일 갯수를 수정하면 남은 갯수에 따라 인디케이터 갯수가 늘어나고 줄어듦.
+    var indiLen = Math.ceil(dataFile.length / myViewLen);
+    var indiN = 0;
+    var indiLi;
+    for(;indiN < indiLen; indiN += 1){
+        indiArea.append(indiCode);
+        indiLi = indiArea.children('li').eq(indiN);
+        indiLi.find('a').text(indiN + 1);
+    }
+
 
     //내용 넣기
-    var reSetting = function(){
-    var i=0;
+
+    var reSetting = function(n){
+    // var i=0;
+    var i;
+    // (n!==undefined)? i = n : i = 0; 맨밑에 설명
+    i = 0;
+    var k = n||0;
+    var settingLen = i + myViewLen;
     var noticeLi;
     noticeArea.empty();
-    for(; i<dataFile.length; i+=1){
+    for(; i<settingLen; i+=1){
+        if(dataFile[i+k]==undefined){
+            break;
+        }else{
         noticeArea.append(noticeCode);
         noticeLi = noticeArea.children('li').eq(i);
-        noticeLi.find('em').text( dataFile[i].id);
-        noticeLi.find('span').text( dataFile[i].address);
+        noticeLi.find('em').text( dataFile[i + k].id);
+        noticeLi.find('span').text( dataFile[i + k].address);
+    }
     }
 };
+// 기능 수행 (차후 인디케이터 기능 포함시키기)
 reSetting();
-    // 1. 순서를 뒤집어서 배치.
-    // 2. 한번에 보일 내용을 적당히 줄여서 배치
-    // 3. 오름차순, 내림차순 연결해보기
 
-    var select_area = $('.select_area').find('button');
-    select_area.on('click',function(e){
-        e.preventDefault();
-    var i = $(this).index();
-    switch(i){  
-        case 0:
-            data.sort(function(a,b){
-                return b.id-a.id;
-            });
-            reSetting();
-            break;
-            case 1:
-            data.sort(function(a,b){
-                return a.id-b.id;
-            });
-            reSetting();
-            break;
-    }
-  });
+var indiLiBtn = indiArea.children('li');
+indiLiBtn.on('click', function(e){
+    e.preventDefault();
+    var liN = parseInt( $(this).text() ) - 1;
+    var liSetN = liN * myViewLen;
+    // console.log(liN);
+    reSetting(liSetN);
+});
+
+//   --------------------------3번
+
+//     var select_area = $('.select_area').find('button');
+//     select_area.on('click',function(e){
+//         e.preventDefault();
+//     var i = $(this).index();
+//     switch(i){  
+//         case 0:
+//             data.sort(function(a,b){
+//                 return b.id-a.id;
+//             });
+//             reSetting();
+//             break;
+//             case 1:
+//             data.sort(function(a,b){
+//                 return a.id-b.id;
+//             });
+//             reSetting();
+//             break;
+//     }
+//   });
+
 });
 
 })(jQuery);
+
+/* if( winSt >= 500 ){
+      topBtn.stop().fadeIn();
+    } //if
+    else{
+      topBtn.stop().fadeOut();
+    } //else
+  
+    ------------------------
+    ↓↓↓↓↓ 이렇게 사용가능 ()괄호 제거하고 이해하기 
+    ( (조건) ) ? (참이면) : (거짓이면) ;
+    ====================
+    ( winSt >= 500 ) ? topBtn.stop().fadeIn() : topBtn.stop().fadeOut(); */
