@@ -19,7 +19,7 @@
 .context ul {width: 100%;height: auto;}
 .context li {width: 100%; height: 30px; border-bottom: 1px dotted #777; margin-bottom: 0.5rem;}
 .context li:last-child{border:0; margin-bottom:0;}
-.context a {display:block; width:100%; height: 100%; text-indent:1rem;}
+.context a {display:block; width:100%; height: 100%; text-indent:0.5rem;}
 /* em ==== 권유의 강조 */
 .context em { display:inline-block;width: 2rem; text-align:right; font-style: normal;font-weight: bold; margin-right: 0.5rem;}
 .context span { padding-left:0.5rem; border-left:1px solid #07a; color:#777;}
@@ -28,12 +28,13 @@
 /* 인디케이터 영역-------------------------------------------------------------- */
 
 .indicator { 
+    position: relative;
     width: 80%; height: 25px;
     margin:auto; margin-top:2rem;
     padding:0.2rem; border-radius:40px;
     background-color: #07a;
 }
-.indicator ul {width: 100%; height: 100%;text-align: center;}
+.indicator ul {width: 70%; height: 100%;margin:auto;text-align: center;}
 .indicator li {display: inline-block; margin:0 0.2rem; width: 50px;height: 25px; line-height: 25px;}
 .indicator a {
     display:block; width: 100%;height: 100%;text-align: center;
@@ -41,3 +42,13 @@
     background-color: #fff;}
     
 .indicator li.action a{font-weight: bold; font-size: 1.1rem; color:#037;}
+
+.more_btn {
+    position:absolute;width:70%; height: 0; top:50%; left:7.5%; 
+}
+.more_btn button {
+     width: 3.125rem;height: 1.5625rem;font-size: 0.7rem; color:#fff; background-color: #333;border-radius: 25px;
+     transform:translateY(-50%);
+    }
+.next_notice {float:right;}
+.prev_notice {float:left;}

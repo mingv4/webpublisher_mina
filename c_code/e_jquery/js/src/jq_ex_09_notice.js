@@ -25,7 +25,7 @@ $.ajax({
     var indiCon = notice.children('.indicator');
     var indiArea = indiCon.children('ul');
     //기본세팅
-    var myViewLen = 70; // 한번에 보일 갯수
+    var myViewLen = 20; // 한번에 보일 갯수
     
     
     //인디케이터 생성하기 + 한번에 보일 갯수를 수정하면 남은 갯수에 따라 인디케이터 갯수가 늘어나고 줄어듦.
@@ -37,6 +37,34 @@ $.ajax({
         indiLi = indiArea.children('li').eq(indiN);
         indiLi.find('a').text(indiN + 1);
     }
+
+    // 인디케이터 보일 갯수 조정하기
+    var indiViewLen= 5;
+    var iv = 0;
+    indiLi = indiArea.children('li');
+    var memoryN; 
+
+    for (; iv < indiLen; iv += 1){
+        if(iv < indiViewLen){
+            memoryN=iv+1;
+            continue;
+        } else { indiLi.eq(iv).hide();
+        }
+    }
+
+    var nBtn = indiCon.find('.next_notice');
+    var pBtn = indiCon.find('.prev_notice');
+
+    nBtn.on('click',function(e){
+        e.preventDefault();
+        var nbn = memoryN;
+        indiLi.hide();
+        for (;nbn < memoryN+indiViewLen; nbn+=1) {
+            indiLi.eq(nbn).show();
+        }
+        memoryN=nbn;
+    });
+
 
 
     //내용 넣기
@@ -80,7 +108,7 @@ indiLiBtn.on('click', function(e){
 //         e.preventDefault();
 //     var i = $(this).index();
 //     switch(i){  
-//         case 0:
+//         case 0: 
 //             data.sort(function(a,b){
 //                 return b.id-a.id;
 //             });
