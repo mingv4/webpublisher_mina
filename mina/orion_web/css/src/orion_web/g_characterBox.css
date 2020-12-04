@@ -1,0 +1,47 @@
+#characterBox {
+  float: left;
+  width: 100%; height: 800px;
+  background-color: #f2e5c6;
+}
+
+.character_title_area {
+  margin:auto;
+  width: 560px;height: 260px;
+}
+.character_title_area ul {
+  width: 560px;height: 260px;
+}
+
+
+.character_title_area ul li:nth-child(1) {
+  margin-top: 60px;
+  width: 80px;height: 146px;
+}
+.character_title_area ul li:nth-child(2) {
+  margin:auto;
+  margin-top:16px;
+  width: 355px;height: 25px;
+  text-align: center; font-size:21px; color:#776035; 
+  font-family: 'TmoneyRoundWindRegular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.character_title_area ul li button {width: 221px;height: 54px;
+}
+.character_title_area ul li:nth-child(3) {
+  margin-top:40px; margin-left:170px;
+  width: 560;height: 60px;
+}
+
+.charater_image_area { 
+  margin:auto; margin-top:30px; width: 900px;height: 340px; }
+
+.character_info {float:left; width: 360px;height: 340px;
+background-image: url("../../../image/character_img/ladu_info.png"); background-repeat: no-repeat; background-position: 50% 50%;
+}
+
+.character_image {float:right; width: 540px;height: 340px; background-image: url("../../../image/character_img/ladu_image.png"); background-repeat: no-repeat; background-position: 50% 50%;
+}
+
