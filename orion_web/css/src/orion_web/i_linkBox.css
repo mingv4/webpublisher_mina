@@ -1,0 +1,82 @@
+#linkBox {
+  float: left;
+  width: 100%; height: 800px;
+}
+#linkBox>h2 {margin:auto; margin-top:120px ;
+  width:120px; height: 60px;
+ font-size: 3rem;  color:#5a5a5a;
+ font-family: 'TmoneyRoundWindExtraBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindExtraBold.woff') format('woff');
+  text-transform: uppercase;
+}
+
+.link_area {
+  margin: auto;
+  width: 900px;height: 430px;
+}
+
+.link_box_01 {
+  margin:auto; margin-top:60px;
+  width: 900px;height: 180px;
+  margin-bottom:70px;
+}
+
+
+.link_box_01>dl {
+  float:left;
+  width: 132px;height: 180px; margin-right:60px;
+}
+.link_box_01>dl:last-child {margin-right:0;}
+
+.link_box_01 dl>dt {
+  width: 100%; height: 140px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;background-size: contain; background-position: 50% 50%;
+}
+.link_box_01 dl:nth-of-type(1) >dt{background-image: url('../../../sns_logo/fb_logo.png');}
+.link_box_01 dl:nth-of-type(2) >dt{background-image: url('../../../sns_logo/insta_logo.png');}
+.link_box_01 dl:nth-of-type(3) >dt{background-image: url('../../../sns_logo/youtube_logo.png');}
+.link_box_01 dl:nth-of-type(4) >dt{background-image: url('../../../sns_logo/kakao_logo.png');}
+.link_box_01 dl:nth-of-type(5) >dt{background-image: url('../../../sns_logo/blog_logo.png');}
+
+.link_box_01 dl> dd {
+  width: 100%; height: 20px;
+  font-family: 'TmoneyRoundWindRegular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-align: center; color: #707070;
+}
+
+.link_box_02{
+  margin:auto;
+  width: 708px; height: 180px;
+}
+
+.link_box_02>dl {
+  float:left;
+  width: 132px;height: 180px; margin-right:60px;
+}
+.link_box_02>dl:last-child {margin-right:0;}
+
+.link_box_02 dl>dt {
+  width: 100%; height: 140px;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;background-size: contain; background-position: 50% 50%;
+}
+
+.link_box_02 dl:nth-of-type(1) >dt{background-image: url('../../../sns_logo/location_logo.png');}
+.link_box_02 dl:nth-of-type(2) >dt{background-image: url('../../../sns_logo/costomer_logo.png');}
+.link_box_02 dl:nth-of-type(3) >dt{background-image: url('../../../sns_logo/hire_logo.png');}
+.link_box_02 dl:nth-of-type(4) >dt{background-image: url('../../../sns_logo/mall_logo.png');}
+
+.link_box_02 dl> dd {
+  width: 100%; height: 20px;
+  font-family: 'TmoneyRoundWindRegular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2rem;
+  text-align: center; color: #707070;
+}
