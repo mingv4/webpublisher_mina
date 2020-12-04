@@ -1,0 +1,29 @@
+/* a_main_wrap.css */
+
+html,body {height: 100%;}
+/* 공통영역 */
+#wrap {
+    width: 100%; height: 100%; background-color: #ccc;
+}
+
+/* mobile */
+@media screen and (max-width:480px) {
+    #wrap {width: 100%; height: 1000px; background-color: #acf;}
+    #headBox {position: fixed; top: 0; height: 100px;}
+} 
+
+/* tablet */
+@media screen and (min-width:481px) and (max-width:1024px) {
+    #wrap {width: 100%; height: 700px; background-color: #fa0;}
+} 
+
+/* laptop */
+@media screen and (min-width:1025px) and (max-width:1440px) {
+    #wrap {width: 100%; height: 1500px; margin: auto; background-color: #f07;}
+    } 
+
+/* pc */
+@media screen and (min-width:1441px) {
+     #wrap {width: 100%;  height: auto;
+        background-color: #7fa;}
+}

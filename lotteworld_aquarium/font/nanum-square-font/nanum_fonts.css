@@ -1,0 +1,17 @@
+@font-face{
+    font-family:'NanumSquare';
+    src: url("./NanumSquareR.eot");
+    src: url("./NanumSquareR.eot?#iefix") format('embedded-opentype'),
+         url("./NanumSquareR.woff") format('woff'),
+         url("./NanumSquareR.ttf") format('truetype');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family:'NanumSquare';
+    src: url("./NanumSquareb.eot");
+    src: url("./NanumSquareb.eot?#iefix") format('embedded-opentype'),
+            url("./NanumSquareb.woff") format('woff'),
+            url("./NanumSquareb.ttf") format('truetype');
+    font-weight: bold;
+}
