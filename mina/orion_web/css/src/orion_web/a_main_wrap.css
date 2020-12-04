@@ -1,5 +1,0 @@
-#wrap {
-  position: relative;
-  width: calc(100% - 150px); min-width: 1200px; height: auto; max-height: 5350px;
-  background-color:#ccc;
-}
