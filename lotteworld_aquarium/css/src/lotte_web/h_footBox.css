@@ -1,1 +1,83 @@
-#footBox {display: none;}
+#footBox {
+    width: 100vw;height: 200px; background-color:#f7a;
+}
+
+.foot_area {
+    margin:auto; padding-top:30px;
+    width: 60%; height:150px ;background-color: #333333;
+}
+
+.foot_area h2 {
+    float:left;
+    width:15%;height: 140px; background-color: #7a0;
+}
+
+.foot_box {
+    position:relative;
+    float:right;
+    margin-top: 20px;
+    width: 83%; height: 110px; background-color: coral;
+} 
+
+.foot_box .foot_info {
+    position:relative; 
+    float:left;
+    width: 80%; height: 20px;
+}
+
+.foot_box > .foot_info li{ float:left; border-right:2px solid#333; margin-right: 4%; background-color: cornflowerblue;}
+.foot_box > .foot_info li:nth-of-type(1) { width: 18%; height: 100%; }
+.foot_box > .foot_info li:nth-of-type(2) { width: 12%; height: 100%; }
+.foot_box > .foot_info li:nth-of-type(3) { width: 12%; height: 100%; }
+.foot_box > .foot_info li:nth-of-type(4) { width: 22%; height: 100%; }
+.foot_box > .foot_info li:nth-of-type(5) { width: 8%; height: 100%; }
+
+.foot_box > li:last-of-type { border-right:0;}
+
+.foot_box address {
+    float:left;
+    margin-top:18px;
+    width: 100%; height: 60px; background-color: #07a;
+}
+
+.foot_box address p {
+    float:left;
+    margin-right: 3%; margin-bottom: 5px;
+    background-color: bisque; 
+    font-size: 0.8rem;
+}
+.foot_box address p:nth-child(1) {width:22%;}
+.foot_box address p:nth-child(2) {width: 10%;}
+.foot_box address p:nth-child(3) {width:12% ;}
+.foot_box address p:nth-child(4) {width: 28%;}
+.foot_box address p:nth-child(5) {width: 23%;}
+.foot_box address p:nth-child(6) {clear: both;}
+.foot_box address p:nth-last-child {margin-bottom: 0;} 
+
+.sns_logo { 
+     position:absolute; top:64%;left:45%; 
+    width: 12%;height: 40px; background-color: burlywood; }
+.facebook {
+    float:left;
+    width: 40%; height: 40px; background-color: cadetblue;
+}
+.instagram {
+    float:right;
+    width: 40%; height: 40px; background-color: cadetblue;
+}
+
+.family_site_area {
+    position:absolute; top:0; right:0;
+    width: 20%; height: 30px; background-color: #888888;
+}
+
+.family_list { display:none;
+    position: absolute; bottom:30px; left: 0; overflow: hidden;
+    width: 100%;height: 120px; background-color: #555555;}
+.family_list ul {width: 100%; height: 100%;}
+.family_list > li {
+    width: 100%;height: 30px;background-color: darkcyan;
+}
+.family_list a {
+    display: block; width: 100%; height: 30px; background-color: darkmagenta;
+}

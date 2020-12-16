@@ -3,57 +3,66 @@
 /* 공통영역 */
 #headBox {
     position: fixed; z-index: 1000;
-    width: 100vw; height: 120px; background-color: #cccccc;
+    width: 100vw; height: 120px;
 }
-.gnb_lab {
+.head_area {
     margin:auto; padding:15px 0; box-sizing: border-box;
-    width: 70%; height: 100%; background-color: brown;
-}
+    width: 70%; height: 100%;}
 h1 {
     float: left; 
     margin-right:3%;
-    width: 12%; height: 100%; background-color: #f4f;
+    width: 12%; height: 100%;  
+    background-image:url("../../../image/lotteworld_aquarium_img/logo/logo_01.png");
+    background-position: 50% 50%; background-repeat: no-repeat; background-size: contain;
 }
 #gnbBox {
     margin:auto;
     float: left;
-    width: 70%;height: 400px; background-color: #ffaa00;
+    width: 70%;height: auto;
 }
 #gnbBox ul {
     float: left;
-    width: 100%; height: 400px; background-color: #f70;
+    width: 100%; height: auto;
 }
 #gnbBox li {
     float: left; 
     margin-right:5%;
-    width: 16%;height: 400px; background-color: cadetblue;
+    width: 16%;height: auto;
 }
 #gnbBox li:last-child { margin-right:0}
-#gnbBox dl {  width: 100%; height: 100%; }
+#gnbBox dl {  width: 100%; height: auto; }
 #gnbBox dt { 
     margin-top: 60px;
-    width: 100%; height: 30px; background-color: #ff77aa; 
+    width: 100%; height: 30px; 
+    text-align:center;
+    font-size: 1.1rem; color:#fff; font-weight:600;
 }
 #gnbBox dd {
+    display:none;
     margin-top: 30px;
-    width: 100%; height: 280px; background-color: #77aa00;
+    width: 100%; height: 280px;
+    text-align: center; 
+    font-size: 0.9rem;color:#fff;
 }
 #gnbBox dd a {
     margin-bottom: 35px;
-    width: 100%; height: 18px; background-color: indigo;
+    width: 100%; height: 18px
 }
 #unbBox {
     float:left; margin-left:3%;
-    width: 12%; height: 20px; background-color: cornflowerblue;
+    width: 12%; height: 20px
 }
 #unbBox ul {
     width: 100%; height: 100%; 
 }
 #unbBox li {
     float: left;
-    margin-right: 5%;
-    width: 30%; height: 100%; background-color: darkblue ;
+    margin-right: 10%;
+    color:#fff; font-size:0.8rem;
 }
+#unbBox li:nth-of-type(1){width: 24%;height: 100%;}
+#unbBox li:nth-of-type(2){width: 32%;height: 100%;}
+#unbBox li:nth-of-type(3){width: 16%;height: 100%;}
 #unbBox li:last-child{margin-right: 0;}
 
 

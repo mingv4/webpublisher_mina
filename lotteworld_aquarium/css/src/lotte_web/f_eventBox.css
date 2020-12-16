@@ -1,53 +1,63 @@
 #eventBox {
-    width: 100vw; height: 900px; background-color: lightblue;
+    width: 100vw; height: 900px;
+    background-image: url("../../../image/lotteworld_aquarium_img/viewBox/view_05.png");
+    background-position: 50% 50%; background-repeat: no-repeat;
+    background-size: cover;
 }
 .event_box_area {
     margin:auto;
-    width: 70%; height: 100%; background-color: lightcoral;
+    width: 70%; height: 100%;
 }
 
 .event_text { 
     float:right;
     padding-top: 120px;
-    width: 15%; height: 50px; background-color: #a70;
+    width: 15%; height: 50px;
 }
 .event_text h2 {
     position: relative;
-    width: 100%; height: 50px; background-color: #ffaa00;
+    width: 100%; height: 50px;
+    color:#fff; font-weight: 700; font-size: 3rem;
+    text-transform: capitalize;
 }
 .event_box_area h2::after {
     content:""; display:block;
     position: absolute; bottom: -20px; left: 0;
-    width: 100%; height: 2px; background-color: #646464;
+    width: 100%; height: 2px; background-color: #fff;
 }
 
 .event_area {
     padding-top: 280px;
-    width: 100%; height: 470px; background-color: #77aa00;
+    width: 100%; height: 470px;
 }
 
 .event_box {
     float: left; 
     margin-right:5%;
-    width: 30%; height: 470px; background-color: lightcyan;
+    width: 30%; height: 470px; background-color:rgba(255, 255, 255, 0.2);
 }
-.event_box ul {
+.event_area ul {
+    margin-top:30px;
     width: 100%;height: 470px;
 }
 .event_box li:nth-of-type(1) {
     padding-top: 90px;
     margin:auto;
-    width: 25%; height: 105px; background-color: lightseagreen;
+    width: 25%; height: 105px;
+    background-image: url("../../../image/lotteworld_aquarium_img/icon/event_w.svg");
+    background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;
 }
 .event_box li:nth-of-type(2) {
-    margin:auto; margin-top:60px;
-    width: 25%; height: 34px; background-color: lightseagreen;
+    margin:auto; margin-top:20px;
+    width: 25%; height: 34px; 
+    text-align:center; color:#fff; font-weight: 600; font-size: 1.7rem;
 }
 .event_box li:nth-of-type(3) {
-    margin:auto; margin-top:40px;
-    width: 100%; height: 50px;background-color: lightseagreen;
+    margin:auto; margin-top:60px;
+    width: 100%; height: 50px;
+    text-align:center; color:#fff; font-weight: 300; font-size: 1.25rem;
 }
-.event_box li:nth-of-type(4) {
+.event_box li:nth-of-type(4) { display:none;
     margin:auto; margin-top:40px;
     width: 20%;height: 30px; background-color: lightseagreen;
 } 
@@ -55,50 +65,52 @@
     .discount_box {
         float: left;
         margin-right:5%;
-        width: 30%; height: 470px; background-color: lightcyan;
+        width: 30%; height: 470px;background-color:rgba(255, 255, 255, 0.2);
     }
-    .discount_box ul {
-        width: 100%;height: 470px;
-    }
+    
     .discount_box li:nth-of-type(1) {
         padding-top: 90px;
         margin:auto;
-        width: 25%; height: 105px; background-color: lightseagreen;
+        width: 25%; height: 105px;  background-image: url("../../../image/lotteworld_aquarium_img/icon/discount_w.svg");
+        background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;
     }
     .discount_box li:nth-of-type(2) {
-        margin:auto; margin-top:60px;
-        width: 25%; height: 34px; background-color: lightseagreen;
+        margin:auto; margin-top:20px;
+        width: 25%; height: 34px; 
+        text-align:center; color:#fff; font-weight: 600; font-size: 1.7rem;
     }
     .discount_box li:nth-of-type(3) {
-        margin:auto; margin-top:40px;
-        width: 100%; height: 50px;background-color: lightseagreen;
+        margin:auto; margin-top:60px;
+        width: 100%; height: 50px;
+        text-align:center; color:#fff; font-weight: 300; font-size: 1.25rem;
     }
-    .discount_box li:nth-of-type(4) {
+    .discount_box li:nth-of-type(4) { display:none;
         margin:auto; margin-top:40px;
         width: 20%;height: 30px; background-color: lightseagreen;
     } 
     /* ============================= */
     .member_box {
         float: left;
-        width: 30%; height: 470px; background-color: lightcyan;
+        width: 30%; height: 470px;background-color:rgba(255, 255, 255, 0.2);
     }
-    .member_box ul {
-        width: 100%;height: 470px;
-    }
+   
     .member_box li:nth-of-type(1) {
         padding-top: 90px;
         margin:auto;
-        width: 25%; height: 105px; background-color: lightseagreen;
+        width: 25%; height: 105px;  background-image: url("../../../image/lotteworld_aquarium_img/icon/member_w.svg");
+        background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;
     }
     .member_box li:nth-of-type(2) {
-        margin:auto; margin-top:60px;
-        width: 25%; height: 34px; background-color: lightseagreen;
+        margin:auto; margin-top:20px;
+        width: 25%; height: 34px; 
+        text-align:center; color:#fff; font-weight: 600; font-size: 1.7rem;
     }
     .member_box li:nth-of-type(3) {
-        margin:auto; margin-top:40px;
-        width: 100%; height: 50px;background-color: lightseagreen;
+        margin:auto; margin-top:60px;
+        width: 100%; height: 50px;
+        text-align:center; color:#fff; font-weight: 300; font-size: 1.25rem;
     }
-    .member_box li:nth-of-type(4) {
+    .member_box li:nth-of-type(4) { display:none;
         margin:auto; margin-top:40px;
         width: 20%;height: 30px; background-color: lightseagreen;
     } 
