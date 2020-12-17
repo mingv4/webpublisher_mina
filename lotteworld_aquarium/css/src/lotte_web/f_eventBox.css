@@ -18,6 +18,7 @@
     position: relative;
     width: 100%; height: 50px;
     color:#fff; font-weight: 700; font-size: 3rem;
+    text-align: right;
     text-transform: capitalize;
 }
 .event_box_area h2::after {
@@ -30,16 +31,30 @@
     padding-top: 280px;
     width: 100%; height: 470px;
 }
+.event_area a { display:none;
+    margin:auto;
+    width: 20%;height: 100%; text-align: center;border: 2px solid#022968;}
 
+.event_area a span{ line-height: 30px;}
+            
 .event_box {
     float: left; 
     margin-right:5%;
     width: 30%; height: 470px; background-color:rgba(255, 255, 255, 0.2);
 }
+
+.event_box:hover {background-color: #fff; }
+.event_box:hover li{color: #022968;}
+.event_box:hover a{display:block;}
+
 .event_area ul {
     margin-top:30px;
     width: 100%;height: 470px;
 }
+.event_box:hover ul {margin-top:0}
+
+.event_area li {color:#fff;}
+
 .event_box li:nth-of-type(1) {
     padding-top: 90px;
     margin:auto;
@@ -47,26 +62,41 @@
     background-image: url("../../../image/lotteworld_aquarium_img/icon/event_w.svg");
     background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;
 }
+.event_box:hover li:nth-of-type(1){background-image: url("../../../image/lotteworld_aquarium_img/icon/event.svg");
+    background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;}
+
 .event_box li:nth-of-type(2) {
     margin:auto; margin-top:20px;
-    width: 25%; height: 34px; 
-    text-align:center; color:#fff; font-weight: 600; font-size: 1.7rem;
+    width: 100%; height: 34px; 
+    text-align:center; font-weight: 600; font-size: 1.7rem;
 }
+.event_box:hover li:nth-of-type(2){font-weight: 800;}
+
 .event_box li:nth-of-type(3) {
     margin:auto; margin-top:60px;
     width: 100%; height: 50px;
-    text-align:center; color:#fff; font-weight: 300; font-size: 1.25rem;
+    text-align:center; font-weight: 300; font-size: 1.1rem;
 }
-.event_box li:nth-of-type(4) { display:none;
+.event_box:hover li:nth-of-type(3){font-weight: 500;}
+
+
+.event_box li:nth-of-type(4) { 
     margin:auto; margin-top:40px;
-    width: 20%;height: 30px; background-color: lightseagreen;
+    width: 100%;height: 30px; font-size: 0.8rem;
 } 
-    /* ============================= */
+.event_box:hover li:nth-of-type(4){margin-top:35px; font-weight: 800;}
+.event_box li:nth-of-type(4) a:hover{border:2px solid#022968; background-color: #022968; color:#fff;}
+    /* ==================================================================================================================== */
     .discount_box {
         float: left;
         margin-right:5%;
         width: 30%; height: 470px;background-color:rgba(255, 255, 255, 0.2);
     }
+    .discount_box:hover {background-color: #fff; }
+    .discount_box:hover li{color: #022968;}
+    .discount_box:hover a{display:block;}
+  
+    .discount_box:hover ul {margin-top:0}
     
     .discount_box li:nth-of-type(1) {
         padding-top: 90px;
@@ -74,43 +104,69 @@
         width: 25%; height: 105px;  background-image: url("../../../image/lotteworld_aquarium_img/icon/discount_w.svg");
         background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;
     }
+    .discount_box:hover li:nth-of-type(1){background-image: url("../../../image/lotteworld_aquarium_img/icon/discount.svg");
+        background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;}
+
     .discount_box li:nth-of-type(2) {
         margin:auto; margin-top:20px;
-        width: 25%; height: 34px; 
-        text-align:center; color:#fff; font-weight: 600; font-size: 1.7rem;
+        width: 100%; height: 34px; 
+        text-align:center;font-weight: 600; font-size: 1.7rem;
     }
+    .discount_box:hover li:nth-of-type(2){font-weight: 800;}
+    
     .discount_box li:nth-of-type(3) {
         margin:auto; margin-top:60px;
         width: 100%; height: 50px;
-        text-align:center; color:#fff; font-weight: 300; font-size: 1.25rem;
+        text-align:center;font-weight: 300; font-size: 1.1rem;
     }
-    .discount_box li:nth-of-type(4) { display:none;
+    .discount_box:hover li:nth-of-type(3){ font-weight: 500;}
+    
+    .discount_box li:nth-of-type(4) {
         margin:auto; margin-top:40px;
-        width: 20%;height: 30px; background-color: lightseagreen;
+        width: 100%;height: 30px; font-size: 0.8rem;
     } 
-    /* ============================= */
+   .discount_box:hover li:nth-of-type(4){ margin-top:35px;font-weight: 800;}
+   .discount_box li:nth-of-type(4) a:hover {border:2px solid#022968; background-color: #022968; color:#fff;}
+
+
+    /* ==================================================================================================================== */
     .member_box {
         float: left;
         width: 30%; height: 470px;background-color:rgba(255, 255, 255, 0.2);
     }
-   
+
+    .member_box:hover {background-color: #fff; }
+    .member_box:hover li{color: #022968;}
+    .member_box:hover a{display:block;}
+
+    .member_box:hover ul {margin-top:0}
+
     .member_box li:nth-of-type(1) {
         padding-top: 90px;
         margin:auto;
         width: 25%; height: 105px;  background-image: url("../../../image/lotteworld_aquarium_img/icon/member_w.svg");
         background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;
     }
+    .member_box:hover li:nth-of-type(1){background-image: url("../../../image/lotteworld_aquarium_img/icon/member.svg");
+        background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;}
+
     .member_box li:nth-of-type(2) {
         margin:auto; margin-top:20px;
-        width: 25%; height: 34px; 
-        text-align:center; color:#fff; font-weight: 600; font-size: 1.7rem;
+        width: 100%; height: 34px; 
+        text-align:center; font-weight: 600; font-size: 1.7rem;
     }
+    .member_box:hover li:nth-of-type(2){font-weight: 800;}
+
     .member_box li:nth-of-type(3) {
         margin:auto; margin-top:60px;
         width: 100%; height: 50px;
-        text-align:center; color:#fff; font-weight: 300; font-size: 1.25rem;
+        text-align:center; font-weight: 300; font-size: 1.1rem;
     }
-    .member_box li:nth-of-type(4) { display:none;
+    .member_box:hover li:nth-of-type(3){ font-weight: 500;}
+
+    .member_box li:nth-of-type(4) {
         margin:auto; margin-top:40px;
-        width: 20%;height: 30px; background-color: lightseagreen;
+        width: 100%;height: 30px; font-size: 0.8rem; 
     } 
+    .member_box:hover li:nth-of-type(4){margin-top:35px; font-weight: 800;}
+    .member_box li:nth-of-type(4) a:hover{border:2px solid#022968; background-color: #022968; color:#fff;}
