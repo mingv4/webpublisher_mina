@@ -1,0 +1,6 @@
+/* laptop */
+@media screen and (min-width:1025px) and (max-width:1440px) {
+   
+    #gnbBox dt {font-size: 1rem;}
+
+} /*=========== // midea screen===================*/ 

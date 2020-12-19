@@ -1,0 +1,37 @@
+/* a_main_wrap.css */
+
+@import url("../b_headBox/b_headBox_all.css");
+@import url("../c_viewBox/c_viewBox_all.css");
+@import url("../d_ticketBox/d_ticketBox_all.css");
+@import url("../e_introBox/d_introBox_all.css");
+@import url("../f_eventBox/f_eventBox_all.css");
+@import url("../g_communityBox/g_communityBox_all.css");
+@import url("../h_footBox/h_footBox_all.css");
+
+html,body {height: 100%;}
+/* 공통영역 */
+#wrap {
+    width: 100%; height: 100%;
+}
+
+/* mobile */
+@media screen and (max-width:480px) {
+    #wrap {width: 100%; height: auto;}
+    #headBox {position: fixed; top: 0; height: 100px;}
+} 
+
+/* tablet */
+@media screen and (min-width:481px) and (max-width:1024px) {
+    #wrap {width: 100%; height: auto;}
+} 
+
+/* laptop */
+@media screen and (min-width:1025px) and (max-width:1440px) {
+    #wrap {width: 100%; height: auto; margin: auto;}
+    } 
+
+/* pc */
+@media screen and (min-width:1441px) {
+     #wrap {width: 100%;  height: auto;
+        }
+}

@@ -1,0 +1,80 @@
+/* tablet */
+@media screen and (min-width:481px) and (max-width:1024px) {
+    #wrap {width: 100%; height: auto;}
+
+
+#wrap {position: relative;}
+#headBox {
+    position: absolute; left:0; top:0; z-index: 100;
+}
+.head_area>button {
+    float:right;
+    margin-top: 45px;
+    width: 45px;height: 35px; 
+    background-image: url("../../../image/lotteworld_aquarium_img/icon/menu_w.svg");
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+}
+h1 {
+    float: left; 
+    width: 40%; height: 100%;  
+    background-image:url("../../../image/lotteworld_aquarium_img/logo/logo_01.png");
+    background-position: 50% 50%; background-repeat: no-repeat; background-size: contain;
+}
+#menuBox {
+    position: fixed; top:0; right:0; z-index: 1000;
+    width: 70%; height: 100%; 
+    background-color:#fff;
+}
+
+.menu_title {
+    padding:20px 50px 50px 50px ; box-sizing: border-box;
+    width: 100%; height:auto; background-color:#fff;
+    border-bottom: 2px solid#646464;
+}
+.button_div { width: 100%; height: 40px; margin-right:20px; box-sizing: border-box; }
+.button_div>button { 
+    float: right;
+    width: 45px;height: 35px; 
+    background-image: url("../../../image/lotteworld_aquarium_img/icon/x.svg");
+    background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
+}
+
+.menu_title_01 {
+    width: 100%;height: auto; margin-bottom: 20px;
+    color:#ea202d; font-size: 2rem; font-weight: 800;
+    text-transform:capitalize;
+}
+.menu_title_02 {
+    width: 100%;height: auto;  margin-bottom: 20px;
+    color:#797979; font-size: 1rem; font-weight: 600;
+}
+
+.menu_title ul { width: 100%; height: 40px;}
+.menu_title li{
+    float:left; margin-right:30px;
+     width: 18%; height: 40px; 
+    }
+.menu_title li a{
+    width: 100%;height: 100%;
+    border: 2px solid#646464; border-radius: 5px;
+    color:#646464; text-align: center; line-height: 40px;
+    font-size: 0.9rem; font-weight: 600;
+}
+#gnbBox{width: 100%;height: auto;}
+.gnb_menu { width: 100%;height: auto;}
+.gnb_menu dl {text-align:left; width: 100%; height: auto;}
+.gnb_menu button {
+    text-indent: 70px;
+    text-transform: capitalize;
+    text-align:left; width: 100%; height: auto;
+    color:#797979; font-size: 1rem; font-weight: 600;
+}
+
+
+
+} /*==================// media screen====================*/
+@media screen and (max-width:650px) {
+    .menu_title li{
+         width: 25%;
+        }
+}
