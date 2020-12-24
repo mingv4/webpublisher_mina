@@ -21,7 +21,7 @@
 .accordion_01 dt > focus {background-color: #045;}
 
 .accordion_01 dd {
-    display: none;
+    /* display: none; */
     width: 100%; height: auto; padding: 1rem;
     box-sizing: border-box; background-color: #fda;
     border-bottom: 0.05rem dotted #ca7;}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- jq_ex_17_map.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../fonts/fontawesome/css/all.css">
+
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/base/variable.css">
+
+  <link rel="stylesheet" href="../css/src/jq_ex_17_map.css">
+
+  <title>jq_ex_17_map</title>
+</head>
+<body>
+<!-- latout -->
+  <div id="wrap">
+    <h1><a href="./content.html">jQuery</a></h1>
+    <div class="part">
+      <h2>찾아오는 길</h2>
+      <div class="map_area">
+        <div class="map_img" id="map"></div>
+        <div class="store">
+          <h3>매장명</h3>
+          <ul>
+            <li class="action"><a href="#" 
+              data-x="37.262700908213816"
+              data-y="127.02993659360767">수원점</a></li>
+            <li><a href="#" 
+              data-x="37.202717590660335"
+              data-y="127.06846733795301">화성점</a></li>
+            <li><a href="#" 
+              data-x="37.37047878542569"
+              data-y="126.95178517593213">안양점</a></li>
+            <li><a href="#" 
+              data-x="37.31713425885347"
+              data-y="126.85008133131267">안산점</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div> <!--wrap-->
+<!-- script-->
+   <script src="../js/base/jquery-3.5.1.js"></script>
+   <script src="../js/base/jquery-ui.js"></script>
+   <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=718d6c505f0b836680f70daa14df411c"></script>
+   <script src="../js/src/jq_ex_17_map.js"></script>
+
+</body>
+</html>
