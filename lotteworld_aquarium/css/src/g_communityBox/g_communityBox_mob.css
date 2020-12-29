@@ -1,0 +1,6 @@
+/* mobile */
+@media screen and (max-width:480px) {
+    #wrap {width: 100%; height: auto;}
+    #headBox {position: fixed; top: 0; height: 100px;}
+    #communityBox {display: none;}
+} 

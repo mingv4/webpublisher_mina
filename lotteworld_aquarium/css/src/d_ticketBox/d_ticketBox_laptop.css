@@ -1,6 +1,33 @@
 /* laptop */
 @media screen and (min-width:1025px) and (max-width:1440px) {
     
-
+    .ticketBox_area {
+        margin:auto;
+        width: 80%; height: 100%;
+    }
+    .time_area {
+        float: left;
+        width: 55%; height: 100%;
+    }
+    .time_area li:nth-of-type(1) {
+        float: left; margin-top:20px;
+        width: 10%;height: 60%;
+        background-image: url("../../../image/lotteworld_aquarium_img/icon/clock.svg");
+        background-position: 50% 50%; background-repeat: no-repeat;
+        background-size: contain; 
+    }
+    .time_area li:nth-of-type(2) {
+        float: left;
+        width: 27%;height: 100%; 
+        line-height: 100px;
+        color:#a7a7a7; font-weight:500; font-size:1.1rem;
+    }
+    .time_area li:nth-of-type(3) {
+        float: left;
+        width: 40%;height: 100%; 
+        line-height: 100px;
+        color:#737373; font-weight:700; font-size:1.1rem;
+    }
+    .time_area li {margin-right: 3%;}
 
     } /*=========== // midea screen===================*/ 

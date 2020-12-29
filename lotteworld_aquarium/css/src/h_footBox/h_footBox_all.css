@@ -1,3 +1,6 @@
 @charset "UTF-8";
 
 @import url("../h_footBox/h_footBox_pc.css");
+@import url("../h_footBox/h_footBox_tab.css");
+@import url("../h_footBox/h_footBox_labtop.css");
+@import url("../h_footBox/h_footBox_mob.css");

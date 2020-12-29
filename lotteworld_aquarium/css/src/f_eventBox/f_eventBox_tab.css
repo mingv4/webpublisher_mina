@@ -1,0 +1,85 @@
+/* tablet */
+@media screen and (min-width:481px) and (max-width:1024px) {
+    #wrap {width: 100%; height: auto;}
+    #eventBox {
+        width: 100vw; height: 900px;
+        background-image: url("../../../image/lotteworld_aquarium_img/viewBox/view_05.png");
+        background-position: 50% 50%; background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .event_box_area {
+        position: relative;
+        margin:auto;
+        width: 70%; height: 100%;
+    }
+    
+    .event_text { 
+        float:right;
+        padding-top: 120px;
+        width: 80%; height: 50px;
+    }
+    .event_text h2 {
+        position: relative;
+        width: 100%; height: 50px;
+        color:#fff; font-weight: 700; font-size: 2.5rem;
+        text-align: right;
+        text-transform: capitalize;
+    }
+    .event_box_area h2::after {
+        content:""; display:block;
+        position: absolute; bottom: -10px; right: 0;
+        width: 110px; height: 2px; background-color: #fff;
+    }
+    .pn_button {
+        position: absolute; top:57%; left:0; z-index: 1000;
+        width: 100%;height: 0;
+    }
+    .prev { 
+        float:left;
+        width: 5%;height: 50px; 
+        background-image: url("../../../image/lotteworld_aquarium_img/icon/prev.svg");
+        background-position: 50% 50%; background-repeat: no-repeat; background-size: contain;
+    }
+    .next { 
+        float:right;
+        width: 5%;height: 50px; 
+        background-image: url("../../../image/lotteworld_aquarium_img/icon/next.svg");
+        background-position: 50% 50%; background-repeat: no-repeat; background-size: contain;
+    }
+    .event_area {
+        overflow: hidden;
+        margin:auto;
+        padding-top: 50px;
+        width: 80%; height:500px;
+    }
+    .event_list { width: 300%;height: 100%; }
+    
+    .event_box { 
+        margin:auto;
+        margin-top:70px;
+        width: 33.3333333%;height: 100%; background-color:#fff;
+    }
+    
+    .event_box div {float:left;}
+
+    .event_box ul { width: 100%;height: 100%;}
+    .event_box li { color :#022968;}
+    .event_box li:nth-of-type(1) {
+        padding-top: 80px;
+        margin:auto;
+        width: 25%; height: 105px;
+        background-image: url("../../../image/lotteworld_aquarium_img/icon/event.svg");
+        background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;
+    }  
+    .event_box li:nth-of-type(2) {
+        margin:auto; margin-top:15px;
+        width: 100%; height: 34px; 
+        text-align:center; font-weight: 800;; font-size: 1.7rem;
+    }
+    .event_box li:nth-of-type(3) {
+        margin:auto; margin-top:50px;
+        width: 100%; height: 50px;
+        text-align:center; font-weight: 500; font-size: 1.1rem;
+    }   
+
+} 

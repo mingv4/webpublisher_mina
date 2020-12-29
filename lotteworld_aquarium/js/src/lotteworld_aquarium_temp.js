@@ -1,4 +1,4 @@
- // elle_temp.js
+ // lottewworld_aquarium_temp.js
 var deviceType = function(){
     var NowType;
   

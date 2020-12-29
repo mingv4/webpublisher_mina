@@ -1,0 +1,60 @@
+/* mobile */
+@media screen and (max-width:480px) {
+    #wrap {width: 100%; height: auto;}
+    #headBox {position: fixed; top: 0; height: 100px;}
+
+#introBox {
+    width: 100vw;height: 750px;
+}
+.intro_area p {display:none;}
+.intro_box_area {
+        margin:auto;
+        width: 90%;height: 100%;
+    } 
+.intro_area { padding-top: 80px;}
+.intro_area h2 {
+    position: relative;
+    width: 100%; height: 40px;
+    color:#fff; font-weight: 700; font-size: 1.9rem;
+    text-transform: capitalize;
+}
+.intro_area h2::after {
+    content:""; display:block;
+    position: absolute; bottom: 0; left: 0;
+    width: 137px; height: 2px; background-color: #fff;
+}
+
+.intro_title {
+    float:right;
+    margin-top: 70px;
+    width: 100%; height: 320px;
+}
+
+.intro_title ul {
+    float:right;
+    width: 90%;height: 100%; text-align: right;
+}
+.intro_title li:nth-of-type(1) {
+    float: left;
+    margin-bottom: 50px;
+    width: 100%; height: 70px;
+    word-break: keep-all;
+    color:#fff; font-weight: 700; font-size:2rem;
+}
+
+.intro_title li:nth-of-type(2) {
+    float: left;
+    word-break: keep-all;
+    margin-bottom: 30px;
+    width: 100%; height: 100px; 
+    color:#fff; font-weight: 400; font-size: 1.1rem;line-height: 30px;
+}
+.intro_title li:nth-of-type(3) {
+    float: right;
+    width: 25%; height: 30px; border:2px solid#fff;
+}
+.intro_title li:nth-of-type(3) a {
+    display:block; width: 100%;height: 100%;
+    line-height: 28px;
+    color:#fff; font-weight: 400; font-size: 1.2rem; text-align: center;}
+} 

@@ -2,5 +2,86 @@
 @media screen and (min-width:1025px) and (max-width:1440px) {
    
     #gnbBox dt {font-size: 1rem;}
+/* pc */
+
+    #wrap {width: 100%;  height: auto;}
+        
+        
+#headBox {
+    position: fixed; z-index: 1000;
+    width: 100vw; height: auto; min-height: 120px;
+   
+    transition:all 100ms linear;
+}
+.head_area {
+    position: relative;
+    margin:auto; padding:15px 0; box-sizing: border-box;
+    width: 75%; height: 100%;}
+    h1 {
+        float: left; 
+        margin-right:2.5%;
+        width: 12%; height: 100px;  
+        background-image:url("../../../image/lotteworld_aquarium_img/logo/logo_01.png");
+        background-position: 50% 50%; background-repeat: no-repeat; background-size: contain;
+    }
+    #gnbBox {
+        margin:auto;
+        float: right;
+        width: 85%;height: auto;
+        margin-top:30px;
+    }
+    #gnbBox ul {
+        float: left;
+        padding-top: 15px;
+        width: 100%; height: auto;
+    }
+    #gnbBox li {
+        float: left; 
+        margin-right:3%;
+        width: 16%;height: auto;
+    }
+    #gnbBox li:nth-of-type(2) {width:23%}
+    #gnbBox li:last-child { margin-right:0}
+    #gnbBox dl {  width: 100%; height: auto; }
+    #gnbBox dt { 
+        width: 100%; height: 30px; 
+        text-align:center; line-height: 30px;
+        font-size: 1.1rem; color:#fff; font-weight:600;
+    }
+    #gnbBox dt a {width: 100%;height: 100%;}
+    
+    #gnbBox dd { display:none;
+        margin-top: 50px;
+        width: 100%; height: 280px;
+        text-align: center; 
+        font-size:1rem;color:#fff;
+    }
+
+    #gnbBox dd a {
+        margin-bottom: 35px;
+        width: 100%; height: 18px
+    }
+    #unbBox {
+        position:absolute; top:0; right:0;
+        float:left; margin-left:3%;
+        width: 100%; height: 20px
+    }
+    
+    #unbBox ul {
+        float:right;
+        width: auto;  height: 100%; 
+    }
+    #unbBox li {
+        float: left;
+        margin-right: 10px;
+        width: 50px; height: 100%;
+        color:#fff; font-size:0.8rem;
+    }
+    #unbBox li a {width: 100%;height: 100%;}
+    #unbBox li:nth-child(2){margin-right:25px;}
+    #unbBox li:last-child{margin-right: 0;}
+    
+
+
 
 } /*=========== // midea screen===================*/ 

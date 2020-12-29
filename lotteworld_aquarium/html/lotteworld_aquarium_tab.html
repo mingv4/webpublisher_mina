@@ -4,12 +4,12 @@
     <div class="head_area">
    <h1><a href="#"><span class="hidden_context">logo</span></a></h1>
 
-   <button type="button menu_icon"></button>
+   <button type="button menu_icon" class="menu_open"></button>
    <div id="menuBox">
 
     <div class="menu_title">
         <div class="button_div">
-        <button type="button"></button>
+        <button type="button" class="menu_close"></button>
         </div>
        <p class="menu_title_01">lotteworld aquarium</p>
        <p class="menu_title_02">롯데월드 아쿠아리움에 오신 것을 환영합니다.</p>
@@ -24,16 +24,22 @@
    <nav id="gnbBox">
        <h2 class="hidden_context">global navigation menu</h2>
        <div class="gnb_menu">
+           
         <dl>
             <dt>
             <button type="button">about us
             <i class="icon"></i>
-            </button></dt>
-              <dd><a href="#">아쿠아리움 소개</a></dd>
-              <dd><a href="#">뉴스 · 공지</a></dd>
-              <dd><a href="#">전시생물 소개</a></dd>
-              <dd><a href="#">아쿠아리움 사람들</a></dd>
-              <dd><a href="#">제휴 · 유관시설</a></dd>
+            </button>
+            </dt>
+              <dd>
+                  <ul>
+                  <li><a href="#">아쿠아리움 소개</a></li>
+                  <li><a href="#">뉴스 · 공지</a></li>
+                  <li><a href="#">전시생물 소개</a></li>
+                  <li><a href="#">아쿠아리움 사람들</a></li>
+                  <li><a href="#">제휴 · 유관시설</a></li>
+                </ul>
+            </dd>
         </dl>
         
         
@@ -41,22 +47,32 @@
             <dt>
             <button type="button">프로그램 · 이벤트
             <i class="icon"></i>
-            </button></dt>
-              <dd><a href="#">프로그램</a></dd>
-              <dd><a href="#">아쿠아리움 Now</a></dd>
-              <dd><a href="#">이벤트</a></dd>
+            </button>
+           </dt>
+           <dd>
+              <ul>
+                <li><a href="#">프로그램</a></li>
+                <li><a href="#">아쿠아리움 Now</a></li>
+                <li><a href="#">이벤트</a></li>
+              </ul>
+            </dd>
         </dl>
 
         <dl>
             <dt>
             <button type="button">이용안내
             <i class="icon"></i>
-            </button></dt>
-            <dd><a href="#">운영시간</a></dd>
-            <dd><a href="#">이용요금</a></dd>
-            <dd><a href="#">우대정보</a></dd>
-            <dd><a href="#">편의시설</a></dd>
-            <dd> <a href="#">교통 · 주차</a></dd>
+            </button>
+            </dt>
+            <dd>
+              <ul>
+                <li><a href="#">운영시간</a></li>
+                <li><a href="#">이용요금</a></li>
+                <li><a href="#">우대정보</a></li>
+                <li><a href="#">편의시설</a></li>
+                <li><a href="#">교통 · 주차</a></li>
+              </ul>
+            </dd>
         </dl>
        
         
@@ -64,25 +80,35 @@
             <dt>
             <button type="button">온라인 예매
             <i class="icon"></i>
-            </button></dt>
-            <dd><a href="#">이용권 예매</a></dd>
-            <dd><a href="#">예매 확인 및 취소</a></dd>
-            <dd><a href="#">단체 프로그램 안내</a></dd>
+            </button>
+            </dt>
+            <dd>
+             <ul>
+               <li><a href="#">이용권 예매</a></li>
+               <li><a href="#">예매 확인 및 취소</a></li>
+               <li><a href="#">단체 프로그램 안내</a></li>
+            </ul>
+           </dd>
         </dl>
 
         <dl>
             <dt>
             <button type="button">고객의소리
             <i class="icon"></i>
-            </button></dt>
-            <dd><a href="#">자주 묻는 질문</a></dd>
-            <dd><a href="#">방문 전 이용문의</a></dd>
-            <dd><a href="#">유실물 센터</a></dd>
+            </button>
+            </dt>
+            <dd>
+             <ul>
+               <li><a href="#">자주 묻는 질문</a></li>
+               <li><a href="#">방문 전 이용문의</a></li>
+               <li><a href="#">유실물 센터</a></li>
+            </ul>
+           </dd>
         </dl>
             
        </div>
 
-<div class="headBox_logo"><a href="#"></a></div>
+<div class="headBox_menu_logo"><a href="#"></a></div>
 </div>
    
 </div>
@@ -155,42 +181,51 @@
       <h2>event</h2>
     </div>
 
-    <div class="event_area">
-
-      <div class="event_box">
-          <ul>
-              <li class="event_icon"></li>
-              <li>이벤트</li>
-              <li>롯데월드 아쿠아리움의<br />
-                특별 이벤트를 만나보세요.
-              </li>
-              <li><a href="#"><span>자세히 보기</span></a></li>
-          </ul>
-      </div>
-
-      <div class="discount_box">
-        <ul>
-            <li class="discount_icon"></li>
-            <li>제휴할인</li>
-            <li>제휴카드,멤버십 할인 등<br />
-              우대 혜택을 알아보세요.
-            </li>
-            <li><a href="#"><span>자세히 보기</span></a></li>
-        </ul>
-      </div>
-
-      <div class="member_box">
-        <ul>
-            <li class="member_icon"></li>
-            <li>연간회원</li>
-            <li>롯데월드 아쿠아리움의<br />
-              다양한 할인 정보를 확인하세요.
-            </li>
-            <li><a href="#"><span>자세히 보기</span></a></li>
-        </ul>
-      </div>
+    <div class="pn_button">
+        <button type="button" class="prev"></button>
+        <button type="button" class="next"></button>
     </div>
-</div>
+
+
+    <div class="event_area">
+        <div class="event_list">
+
+        <div class="event_box">
+            <ul>
+                <li class="event_icon"></li>
+                <li>이벤트</li>
+                <li>롯데월드 아쿠아리움의<br />
+                  특별 이벤트를 만나보세요.
+                </li>
+            </ul>
+        </div>
+  
+        <div class="discount_box">
+          <ul>
+              <li class="discount_icon"></li>
+              <li>제휴할인</li>
+              <li>제휴카드,멤버십 할인 등<br />
+                우대 혜택을 알아보세요.
+              </li>
+
+          </ul>
+        </div>
+  
+        <div class="member_box">
+          <ul>
+              <li class="member_icon"></li>
+              <li>연간회원</li>
+              <li>롯데월드 아쿠아리움의<br />
+                다양한 할인 정보를 확인하세요.
+              </li>
+
+          </ul>
+        </div>
+       </div>
+
+      </div>
+  </div>
+
 </section>
 <!-- ================================================//eventBox -->
 
@@ -271,10 +306,8 @@
                 <p>전화 : 1661-2000</p>
                 <p>전자우편주소 : happylotteworld@lotte.net</p>
                 <p>사업자등록번호 : 230-85-02469</p>
-                <p class="copyright">Copyright 2014 LOTTEWORLD. All Rights Reserved.</p>
-            
               </address>
-
+       <p class="copyright">Copyright 2014 LOTTEWORLD. All Rights Reserved.</p>
             <div class="sns_logo">
                 <div class="facebook"><a href="#"></a></div>
                 <div class="instagram"><a href="#"></a></div>

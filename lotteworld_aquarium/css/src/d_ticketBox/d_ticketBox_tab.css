@@ -1,0 +1,43 @@
+@media screen and (min-width:481px) and (max-width:1024px) {
+    #wrap {width: 100%; height: auto;}
+
+.ticketBox_area {
+    margin:auto;
+    width: 95%; height: 100%;
+}
+.ticketBox_area li {text-align: center;  margin-right: 0;}
+/* ============================================================= */
+.time_area { width: 49.9%;}
+
+.time_area li:nth-of-type(1) {display:none;}
+.time_area li:nth-of-type(2) {
+    float: left;
+    margin-top: 8px;
+    width: 100%;height: 35%; 
+    line-height: 50px;
+    color:#a7a7a7; font-weight:500; font-size:1rem;
+}
+.time_area li:nth-of-type(3) {
+    float: left;
+    width: 100%;height: 35%; 
+    line-height: 50px;
+    color:#737373; font-weight:700; font-size:1rem;
+}
+.time_area li:last-child {margin-right: 0;}
+
+/* ============================================================= */
+.ticket_area { width: 49.9%;}
+.ticket_area ul {
+    float:none;
+    margin:auto;
+    width: 120px;
+}
+.ticket_area li:nth-of-type(1) {display:none;}
+.ticket_area li:nth-of-type(2) {
+    margin:auto;
+    width: 100%;height: 100%;
+    line-height: 100px;
+    color:#737373; font-weight:700; font-size:1.1rem;
+}
+
+} 
