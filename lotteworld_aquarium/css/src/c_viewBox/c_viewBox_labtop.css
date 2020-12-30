@@ -1,4 +1,11 @@
 /* laptop */
 @media screen and (min-width:1025px) and (max-width:1440px) {
     #wrap {width: 100%; height: auto; margin: auto;}
+
+    #viewBox {/* landing image */
+        width: 100vw;height: 900px;
+        background-image: url("../../../image/lotteworld_aquarium_img/viewBox/view_01.png");
+        background-position: 50% 0; background-repeat: no-repeat;
+        background-size: auto 150%;
+    } 
     } 
