@@ -20,3 +20,5 @@
     text-align: center;
     font-size: 3rem; font-weight: 700; color:#fff;
 }
+.action > .content_area {
+    opacity: 1; transform: translateY(0);}

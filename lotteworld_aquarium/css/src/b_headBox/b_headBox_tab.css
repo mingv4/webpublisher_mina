@@ -5,9 +5,12 @@
 
 #wrap {position: relative;}
 #headBox {
-    position: absolute; left:0; top:0; z-index: 100;
+    position: fixed; left:0; top:0; z-index: 100;
     padding:0;
 }
+
+#headBox.action {  background-color: rgba(0,0,0,0.6); }
+
 #gnbBox { position: relative; }
 .head_area {width: 80%;}
 .head_area>button {
@@ -37,7 +40,7 @@ h1 {
 .button_div { width: 100%; height: 40px; margin-right:20px; box-sizing: border-box; }
 .button_div>button { 
     float: right;
-    width: 45px;height: 35px; 
+    width: 35px;height: 25px; 
     background-image: url("../../../image/lotteworld_aquarium_img/icon/x.svg");
     background-repeat: no-repeat; background-size: contain; background-position: 50% 50%;
 }
@@ -100,7 +103,7 @@ h1 {
 
 #gnbBox dd li {
     float:none;
-    margin-right: 0; padding-left: 80px;
+    margin-right: 0; padding-left: 45px;
     width: 100%; height: 45px;
     line-height: 43px; font-weight: 600; font-size: 1rem;
     text-align: left;

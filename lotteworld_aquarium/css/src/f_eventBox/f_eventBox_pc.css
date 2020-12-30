@@ -58,9 +58,17 @@
 }
 .event_area div{overflow: hidden;}
 
+@media screen and (min-width:1025px) {
+    .event_box:hover ul {padding-top:0}
 
-.event_box:hover ul {padding-top:0}
+}
 
+/* @media screen and (max-width:1025px) {
+    .event_box:hover ul{padding-top: 30px;}
+    .discount_box:hover ul{padding-top: 30px;}
+    .member_box:hover ul{padding-top: 30px;}
+    
+} */
 
 .event_area li {color:#fff;}
 
@@ -106,6 +114,9 @@
     .discount_box:hover a{display:block;}
   
     .discount_box:hover ul {padding-top:0}
+    @media screen and (max-width:1024px) {
+        .discount_box:hover ul {padding-top:30px;}
+    }
     
     .discount_box li:nth-of-type(1) {
         padding-top: 90px;
@@ -149,6 +160,9 @@
     .member_box:hover a{display:block;}
 
     .member_box:hover ul {padding-top:0}
+    @media screen and (max-width:1024px) {
+        .member_box:hover ul {padding-top:30px;}
+    }
 
     .member_box li:nth-of-type(1) {
         padding-top: 90px;
