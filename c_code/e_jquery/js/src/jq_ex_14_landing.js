@@ -11,7 +11,7 @@
     var conBoxOffset = conBox.offset().top;
     var moreBoxOffset = moreBox.offset().top;
     console.log( conBoxOffset, moreBoxOffset );
-  
+    var conScroll;
     win.on('scroll', function(e){
       var getScroll = win.scrollTop(); // 스크롤 값
       // console.log( getScroll );
